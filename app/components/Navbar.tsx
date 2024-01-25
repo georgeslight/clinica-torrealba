@@ -5,8 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai";
 import {FaFacebook, FaInstagram, FaLinkedin, FaYoutube} from "react-icons/fa";
+import { usePathname } from 'next/navigation'
+import clsx from 'clsx';
 
 const Navbar = () => {
+
+    const pathname = usePathname();
 
     const [ nav, setNav ] = useState(false);
     const toggleNav = () => {
@@ -20,19 +24,19 @@ const Navbar = () => {
                 <div className='flex-grow'>
                     <ul className='hidden lg:flex justify-center'>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Inicio</li>
+                            <li className={clsx('ml-10 text-sm uppercase hover:text-[#2cd5c4]', {'text-[#2cd5c4]': pathname === '/'})}>Inicio</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Nosotros</li>
+                            <li className={clsx('ml-10 text-sm uppercase hover:text-[#2cd5c4]', {'text-[#2cd5c4]': pathname === '/nosotros'})}>Nosotros</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Especialidades</li>
+                            <li className={clsx('ml-10 text-sm uppercase hover:text-[#2cd5c4]', {'text-[#2cd5c4]': pathname === '/especialidades'})}>Especialidades</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Equipo Dental</li>
+                            <li className={clsx('ml-10 text-sm uppercase hover:text-[#2cd5c4]', {'text-[#2cd5c4]': pathname === '/team'})}>Equipo Dental</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Contacto</li>
+                            <li className={clsx('ml-10 text-sm uppercase hover:text-[#2cd5c4]', {'text-[#2cd5c4]': pathname === '/contacto'})}>Contacto</li>
                         </Link>
                     </ul>
                 </div>
@@ -81,25 +85,25 @@ const Navbar = () => {
                         <div className='py-4 flex flex-col'>
                             <ul className='uppercase'>
                                 <Link href='/'>
-                                    <li className='py-4 text-sm'>Inicio</li>
+                                    <li className={clsx('py-4 text-sm', {'text-[#2cd5c4]': pathname === '/'})}>Inicio</li>
                                 </Link>
                                 <Link href='/'>
-                                    <li className='py-4 text-sm'>Nosotros</li>
+                                    <li className={clsx('py-4 text-sm', {'text-[#2cd5c4]': pathname === '/nosotros'})}>Nosotros</li>
                                 </Link>
                                 <Link href='/'>
-                                    <li className='py-4 text-sm'>Especialidades</li>
+                                    <li className={clsx('py-4 text-sm', {'text-[#2cd5c4]': pathname === '/especialidades'})}>Especialidades</li>
                                 </Link>
                                 <Link href='/'>
-                                    <li className='py-4 text-sm'>Equipo Dental</li>
+                                    <li className={clsx('py-4 text-sm', {'text-[#2cd5c4]': pathname === '/team'})}>Equipo Dental</li>
                                 </Link>
                                 <Link href='/'>
-                                    <li className='py-4 text-sm'>Contacto</li>
+                                    <li className={clsx('py-4 text-sm', {'text-[#2cd5c4]': pathname === '/contacto'})}>Contacto</li>
                                 </Link>
                             </ul>
                         </div>
                         <div className='pt-40 w-3/4 absolute inset-x-[10%] bottom-10'>
-                            <p className='uppercase tracking-widest text-[#2cd5c4]'>
-                                alterum inani simul
+                            <p className='tracking-widest text-[#2cd5c4]'>
+                                Conectemos
                             </p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div
