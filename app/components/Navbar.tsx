@@ -73,16 +73,16 @@ const Navbar = () => {
                             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                     }>
                         <div>
-                            <div className='flex w-full items-center justify-between'>
-                                <Image src="/assets/Isotipo_T.png" alt="/" width={87} height={35}/>
+                            <div className='flex w-full items-center justify-between border-b border-gray-300 my-4'>
+                                <Image src="/assets/Logo_fondo_blanco.png" alt="/" width={200} height={100}/>
                                 <div onClick={toggleNav}
                                      className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                     <AiOutlineClose/>
                                 </div>
                             </div>
-                            <div className='border-b border-gray-300 my-4'>
-                                <p className={`${imb_plex.className} w-[85%] md:w-[90%] py-4`}>nam aenean malorum eius</p>
-                            </div>
+                            {/*<div className='border-b border-gray-300 my-4'>*/}
+                            {/*    <p className={`${imb_plex.className} w-[85%] md:w-[90%] py-4`}>nam aenean malorum eius</p>*/}
+                            {/*</div>*/}
                         </div>
                         <div className='py-4 flex flex-col'>
                             <ul className='uppercase'>
