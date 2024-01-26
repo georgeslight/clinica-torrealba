@@ -44,19 +44,19 @@ const Navbar = () => {
                 </div>
                 <div className="hidden lg:flex space-x-4">
                     <div
-                        className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaFacebook/>
+                        className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        <FaFacebook />
                     </div>
                     <div
-                        className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-3000'>
                         <FaInstagram/>
                     </div>
                     <div
-                        className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <FaWhatsapp />
                     </div>
                     <div
-                        className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <IoIosMail />
                     </div>
                 </div>
@@ -109,19 +109,19 @@ const Navbar = () => {
                             {/*</p>*/}
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div
-                                    className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaFacebook />
                                 </div>
                                 <div
-                                    className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaInstagram />
                                 </div>
                                 <div
-                                    className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaWhatsapp />
                                 </div>
                                 <div
-                                    className='rounded-full shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    className='flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <IoIosMail />
                                 </div>
                             </div>
