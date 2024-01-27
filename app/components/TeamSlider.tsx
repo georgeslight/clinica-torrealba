@@ -20,7 +20,7 @@ import TeamCard from "@/app/components/TeamCard";
 const TeamSlider = () => {
   return (
     <div id="team" className="w-full py-16">
-      <div className="w-full max-w-[1080px] mx-auto py-16">
+      <div className="w-full mx-auto py-16">
         <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
           Nuestro Equipo
         </h2>
@@ -37,18 +37,18 @@ const TeamSlider = () => {
             spaceBetween={25}
             breakpoints={{
               640: {
-                slidesPerView: 1,
+                slidesPerView: 2.5,
               },
               // when viewport is 768px or above, show 3.5 slides per view
               768: {
-                slidesPerView: 3,
+                slidesPerView: 3.5,
               },
               // when viewport is 1024px or above, show 4.5 slides per view
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 4.5,
               },
             }}
-            // centeredSlides={true}
+            centeredSlides={true}
             navigation={true}
             scrollbar={{ draggable: true }}
             autoplay={{
