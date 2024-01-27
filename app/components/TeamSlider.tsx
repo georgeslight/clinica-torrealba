@@ -36,6 +36,9 @@ const TeamSlider = () => {
             ]}
             spaceBetween={25}
             breakpoints={{
+              10: {
+                slidesPerView: 2,
+              },
               640: {
                 slidesPerView: 2.5,
               },
