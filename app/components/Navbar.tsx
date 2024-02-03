@@ -37,8 +37,8 @@ const Navbar = () => {
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
-                  "ml-10 text-sm uppercase hover:text-[#2cd5c4]",
-                  { "text-[#2cd5c4]": pathname === "/" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4 hover:scale-105 ease-in duration-300",
+                  { "text-[#2cd5c4] font-bold": pathname === "/" },
                 )}
               >
                 Inicio
@@ -47,8 +47,8 @@ const Navbar = () => {
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
-                  "ml-10 text-sm uppercase hover:text-[#2cd5c4]",
-                  { "text-[#2cd5c4]": pathname === "/nosotros" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  { "text-[#2cd5c4] font-bold": pathname === "/nosotros" },
                 )}
               >
                 Nosotros
@@ -57,8 +57,10 @@ const Navbar = () => {
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
-                  "ml-10 text-sm uppercase hover:text-[#2cd5c4]",
-                  { "text-[#2cd5c4]": pathname === "/especialidades" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  {
+                    "text-[#2cd5c4] font-bold": pathname === "/especialidades",
+                  },
                 )}
               >
                 Especialidades
@@ -67,8 +69,8 @@ const Navbar = () => {
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
-                  "ml-10 text-sm uppercase hover:text-[#2cd5c4]",
-                  { "text-[#2cd5c4]": pathname === "/team" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  { "text-[#2cd5c4] font-bold": pathname === "/team" },
                 )}
               >
                 Equipo Dental
@@ -77,8 +79,8 @@ const Navbar = () => {
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
-                  "ml-10 text-sm uppercase hover:text-[#2cd5c4]",
-                  { "text-[#2cd5c4]": pathname === "/contacto" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  { "text-[#2cd5c4] font-bold": pathname === "/contacto" },
                 )}
               >
                 Contacto
