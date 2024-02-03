@@ -9,18 +9,23 @@ import {
   Pagination,
   Scrollbar,
 } from "swiper/modules";
+import SwiperCore from "swiper";
 
 import { team } from "@/lib/team";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 import TeamCard from "@/app/components/TeamCard";
+import { color } from "framer-motion";
+
+SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
 
 const TeamSlider = () => {
   return (
     <div id="team" className="w-full py-16">
-      <div className="w-full mx-auto py-16">
+      <div className="max-w-[1240px]  w-full m-x-24 mx-auto py-16">
         <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
           Nuestro Equipo
         </h2>
@@ -35,24 +40,31 @@ const TeamSlider = () => {
               Mousewheel,
             ]}
             spaceBetween={25}
+            slidesPerView={4}
             breakpoints={{
-              10: {
+              0: {
                 slidesPerView: 2,
+                centeredSlides: true,
               },
-              640: {
-                slidesPerView: 2.5,
+              641: {
+                slidesPerView: 4,
+                centeredSlides: true,
               },
               // when viewport is 768px or above, show 3.5 slides per view
-              768: {
-                slidesPerView: 3.5,
-              },
+              // 769: {
+              //   slidesPerView: 4,
+              //   centeredSlides: true,
+              // },
               // when viewport is 1024px or above, show 4.5 slides per view
-              1024: {
-                slidesPerView: 4.5,
+              1025: {
+                slidesPerView: 4,
+                centeredSlides: false,
               },
             }}
-            centeredSlides={true}
-            navigation={true}
+            // centeredSlides={true}
+            navigation={{
+              enabled: true,
+            }}
             scrollbar={{ draggable: true }}
             autoplay={{
               delay: 5000,
@@ -73,6 +85,19 @@ const TeamSlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <style>
+            {`
+            .swiper-button-next,
+            .swiper-button-prev {
+              color: #2cd5c4
+          }
+          // .swiper-button-next {
+          //   right: -40px;
+          // }
+          // .swiper-button-prev {
+          //   left: -40px
+          }`}
+          </style>
         </div>
       </div>
     </div>
