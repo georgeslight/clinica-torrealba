@@ -16,11 +16,17 @@ const Main = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1,
       );
-    }, 2500); // Change image every 2.5 seconds
+    }, 5000); // Change image every 5 seconds
 
     // Clear interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+    );
+  };
 
   return (
     <div id="home" className="w-full h-screen text-center p-2">
@@ -36,7 +42,7 @@ const Main = () => {
               alt={"/"}
             />
           </div>
-          <div className="w-full sm:absolute right-0 md:top-[45%] lg:right-[10%] xl:top-[35%] xl:right-[10%] sm:max-w-[200px] md:max-w-[600px]">
+          <div className="w-full shadow-lg shadow-black rounded-xl sm:absolute right-0 md:top-[45%] lg:right-[10%] xl:top-[35%] xl:right-[10%] sm:max-w-[200px] md:max-w-[600px] hover:scale-105 ease-in duration-300">
             {images.map((image, index) => (
               <div key={index}>
                 {index === currentIndex && (
@@ -46,7 +52,8 @@ const Main = () => {
                     style={{ width: "100%", height: "auto" }}
                     width={1200}
                     height={800}
-                    className="rounded-md block h-full"
+                    className="rounded-md block h-full cursor-pointer"
+                    onClick={nextImage}
                   />
                 )}
               </div>
