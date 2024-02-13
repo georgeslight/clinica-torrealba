@@ -25,13 +25,8 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/assets/Logo_fondo_blanco.png"
-          alt="/"
-          width={250}
-          height={100}
-        />
+      <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
+        <Image src="/assets/TORRE-ALBA.png" alt="/" width={300} height={100} />
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
             <Link href="/" className={`${didot.className} antialiased`}>
