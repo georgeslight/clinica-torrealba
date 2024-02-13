@@ -49,7 +49,7 @@ const Navbar = () => {
         <Image src="/assets/TORRE-ALBA.png" alt="/" width={300} height={100} />
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
-            <Link href="/" className={`${didot.className} antialiased`}>
+            <Link href="/#home" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4 hover:scale-105 ease-in duration-300",
@@ -59,7 +59,7 @@ const Navbar = () => {
                 Inicio
               </li>
             </Link>
-            <Link href="/" className={`${didot.className} antialiased`}>
+            <Link href="/#team" className={`${didot.className} antialiased`}>
               <li
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
@@ -69,7 +69,10 @@ const Navbar = () => {
                 Nosotros
               </li>
             </Link>
-            <Link href="/" className={`${didot.className} antialiased`}>
+            <Link
+              href="/#expertise"
+              className={`${didot.className} antialiased`}
+            >
               <li
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
