@@ -25,7 +25,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
 const TeamSlider = () => {
   return (
     <div id="team" className="w-full py-16">
-      <div className="max-w-[1240px]  w-full m-x-24 mx-auto py-16">
+      <div className="max-w-[1240px] mx-auto w-full h-full justify-center m-x-24 py-16">
         <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
           Nuestro Equipo
         </h2>
@@ -47,7 +47,7 @@ const TeamSlider = () => {
                 centeredSlides: true,
               },
               641: {
-                slidesPerView: 4,
+                slidesPerView: 3.5,
                 centeredSlides: true,
               },
               // when viewport is 768px or above, show 3.5 slides per view
