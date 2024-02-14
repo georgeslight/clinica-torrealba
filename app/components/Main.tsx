@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <div id="home" className="w-full pb-16 pt-20">
-      <div className="max-w-[1240px] h-screen w-full mx-auto">
+      <div className="max-w-[1240px] h-screen w-full mx-auto relative">
         <div className="h-full absolute">
           <Image
             src={T.src}
@@ -42,7 +42,7 @@ const Main = () => {
             }}
           />
         </div>
-        <div className="h-full flex items-center justify-end mx-auto">
+        <div className="h-full absolute flex items-center  right-0 mx-auto">
           {images.map((image, index) => (
             <div key={index}>
               {index === currentIndex && (
