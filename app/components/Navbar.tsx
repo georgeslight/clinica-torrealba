@@ -18,7 +18,7 @@ import { didot, imb_plex } from "@/app/ui/fonts";
 const Navbar = () => {
   const pathname = usePathname();
 
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const toggleNav = () => {
     setNav(!nav);
   };
@@ -37,12 +37,38 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  // hide navbar when scrolling down
+  useEffect(() => {
+    let lastScrollPos = 0;
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrollingUp = currentScrollPos < lastScrollPos;
+
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+
+      if (isScrollingUp || window.scrollY === 0) {
+        setNav(true);
+      } else {
+        setNav(false);
+      }
+      lastScrollPos = currentScrollPos;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
       className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]"
-          : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"
+        nav
+          ? shadow
+            ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
+            : "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
+          : "fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
