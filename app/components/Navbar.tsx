@@ -14,16 +14,17 @@ import { IoIosMail } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { didot, imb_plex } from "@/app/ui/fonts";
+import { logoNombre } from "@/lib/images";
 
 const Navbar = () => {
   const pathname = usePathname();
-
   const [nav, setNav] = useState(true);
-  const toggleNav = () => {
-    setNav(!nav);
+  const [side, setSide] = useState(false);
+  const toggleSide = () => {
+    setSide(!side);
   };
-
   const [shadow, setShadow] = useState(false);
+  const [selected, setSelected] = useState("/#home");
 
   // handle shadow effect
   useEffect(() => {
@@ -67,19 +68,28 @@ const Navbar = () => {
         nav
           ? shadow
             ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
-            : "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
+            : "fixed w-full h-20 z-[100] bg-[#ecf0f3] transition-transform duration-300"
           : "fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
-        <Image src="/assets/TORRE-ALBA.png" alt="/" width={300} height={100} />
+        <Image
+          src={logoNombre.src}
+          alt={logoNombre.alt}
+          // sizes={"100vw"}
+          style={{
+            width: "auto",
+            height: "60%",
+          }}
+        />
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
             <Link href="/#home" className={`${didot.className} antialiased`}>
               <li
+                onClick={() => setSelected("/#home")}
                 className={clsx(
-                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4 hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": pathname === "/" },
+                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  { "text-[#2cd5c4] font-bold": selected === "/#home" },
                 )}
               >
                 Inicio
@@ -87,9 +97,10 @@ const Navbar = () => {
             </Link>
             <Link href="/#team" className={`${didot.className} antialiased`}>
               <li
+                onClick={() => setSelected("/#team")}
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": pathname === "/nosotros" },
+                  { "text-[#2cd5c4] font-bold": selected === "/#team" },
                 )}
               >
                 Nosotros
@@ -100,10 +111,11 @@ const Navbar = () => {
               className={`${didot.className} antialiased`}
             >
               <li
+                onClick={() => setSelected("/#expertise")}
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
                   {
-                    "text-[#2cd5c4] font-bold": pathname === "/especialidades",
+                    "text-[#2cd5c4] font-bold": selected === "/#expertise",
                   },
                 )}
               >
@@ -112,9 +124,10 @@ const Navbar = () => {
             </Link>
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
+                onClick={() => setSelected("")}
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": pathname === "/team" },
+                  { "text-[#2cd5c4] font-bold": selected === "/" },
                 )}
               >
                 Equipo Dental
@@ -122,9 +135,10 @@ const Navbar = () => {
             </Link>
             <Link href="/" className={`${didot.className} antialiased`}>
               <li
+                onClick={() => setSelected("")}
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": pathname === "/contacto" },
+                  { "text-[#2cd5c4] font-bold": selected === "/" },
                 )}
               >
                 Contacto
@@ -146,87 +160,127 @@ const Navbar = () => {
             <IoIosMail />
           </div>
         </div>
-        <div onClick={toggleNav} className="lg:hidden pr-10">
+        <div onClick={toggleSide} className="lg:hidden p-auto">
           <AiOutlineMenu size={25} />
         </div>
 
         {/* black overlay that covers the whole screen when sidebar is open */}
         <div
           className={
-            nav
+            side
               ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
               : ""
           }
         >
-          {/* When the nav variable is true, it fills up 75% of the screen on small devices, 60% of the screen on medium devices and 45% on large devices. When nav is false, it seems to be hidden to the left of the screen (due to the style left: [-100%]). */}
+          {/* When the side variable is true, it fills up 75% of the screen on small devices, 60% of the screen on medium devices and 45% on large devices. When side is false, it seems to be hidden to the left of the screen (due to the style left: [-100%]). */}
           <div
             className={
-              nav
+              side
                 ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 transition-all duration-500"
             }
           >
             <div>
               <div className="flex w-full items-center justify-between border-b border-gray-300 my-4">
                 <Image
-                  src="/assets/Logo_fondo_blanco.png"
-                  alt="/"
-                  width={200}
-                  height={100}
+                  src={logoNombre.src}
+                  alt={logoNombre.alt}
+                  sizes={"100vw"}
+                  style={{
+                    width: "75%",
+                    height: "auto",
+                  }}
                 />
                 <div
-                  onClick={toggleNav}
+                  onClick={toggleSide}
                   className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 >
                   <AiOutlineClose />
                 </div>
               </div>
-              {/*<div className='border-b border-gray-300 my-4'>*/}
-              {/*    <p className={`${imb_plex.className} w-[85%] md:w-[90%] py-4`}>nam aenean malorum eius</p>*/}
-              {/*</div>*/}
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
-                <Link href="/" className={`${didot.className} antialiased`}>
+                <Link
+                  href="/#home"
+                  // scroll={false}
+                  // className={`${didot.className} antialiased`}
+                >
                   <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("/#home");
+                    }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4]": pathname === "/",
+                      "text-[#2cd5c4] font-bold": selected === "/#home",
                     })}
                   >
                     Inicio
                   </li>
                 </Link>
-                <Link href="/" className={`${didot.className} antialiased`}>
+                <Link
+                  href="/#team"
+                  // scroll={false}
+                  // className={`${didot.className} antialiased`}
+                >
                   <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("/#team");
+                    }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4]": pathname === "/nosotros",
+                      "text-[#2cd5c4] font-bold": selected === "/#team",
                     })}
                   >
                     Nosotros
                   </li>
                 </Link>
-                <Link href="/" className={`${didot.className} antialiased`}>
+                <Link
+                  href="/#expertise"
+                  // scroll={false}
+                  // className={`${didot.className} antialiased`}
+                >
                   <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("/#expertise");
+                    }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4]": pathname === "/especialidades",
+                      "text-[#2cd5c4] font-bold": selected === "/#expertise",
                     })}
                   >
                     Especialidades
                   </li>
                 </Link>
-                <Link href="/" className={`${didot.className} antialiased`}>
+                <Link
+                  href="/"
+                  // scroll={false}
+                  // className={`${didot.className} antialiased`}
+                >
                   <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("");
+                    }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4]": pathname === "/team",
+                      "text-[#2cd5c4] font-bold": selected === "",
                     })}
                   >
                     Equipo Dental
                   </li>
                 </Link>
-                <Link href="/" className={`${didot.className} antialiased`}>
+                <Link
+                  href="/"
+                  // scroll={false}
+                  // className={`${didot.className} antialiased`}
+                >
                   <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("");
+                    }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4]": pathname === "/contacto",
+                      "text-[#2cd5c4] font-bold": selected === "",
                     })}
                   >
                     Contacto
