@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import ImageSlider from "@/app/components/ImageSlider";
-import { images } from "@/lib/images";
+import { images, T } from "@/lib/images";
 
 const Main = () => {
   // State to hold the current image index
@@ -29,36 +28,38 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full h-screen text-center p-2">
-      <div>
-        <div className="max-w[1240px] w-full h-full p-2 flex flex-col pt-28 sm:justify-center items-center">
-          <div className="w-full sm:absolute left-0 md:bottom-[45%] lg:left-[10%] xl:bottom-[35%] xl:left-[10%] sm:max-w-[200px] md:max-w-[600px]">
-            <Image
-              className="rounded-md block h-full"
-              src={"/assets/Logotipo option2_cut.png"}
-              style={{ width: "100%", height: "auto" }}
-              width={1200}
-              height={800}
-              alt={"/"}
-            />
-          </div>
-          <div className="w-full shadow-lg shadow-black rounded-xl sm:absolute right-0 md:top-[45%] lg:right-[10%] xl:top-[35%] xl:right-[10%] sm:max-w-[200px] md:max-w-[600px] hover:scale-105 ease-in duration-300">
-            {images.map((image, index) => (
-              <div key={index}>
-                {index === currentIndex && (
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    style={{ width: "100%", height: "auto" }}
-                    width={1200}
-                    height={800}
-                    className="rounded-md block h-full cursor-pointer"
-                    onClick={nextImage}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
+    <div id="home" className="w-full pb-16 pt-20">
+      <div className="max-w-[1240px] h-screen w-full mx-auto">
+        <div className="h-full absolute">
+          <Image
+            src={T.src}
+            className="object-contain"
+            alt={T.alt}
+            sizes={"100vw"}
+            style={{
+              width: "auto",
+              height: "100%",
+            }}
+          />
+        </div>
+        <div className="h-full flex items-center justify-end mx-auto">
+          {images.map((image, index) => (
+            <div key={index}>
+              {index === currentIndex && (
+                <Image
+                  className="object-contain"
+                  src={image.src}
+                  alt={image.alt}
+                  onClick={nextImage}
+                  sizes={"100vw"}
+                  style={{
+                    width: "auto",
+                    height: "60vh",
+                  }}
+                />
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

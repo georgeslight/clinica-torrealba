@@ -5,7 +5,7 @@ import { expertise } from "@/lib/expertise";
 const Skills = () => {
   return (
     <div id="expertise" className="w-full py-16">
-      <div className="max-w-[1240px] mx-auto flex-col justify-center">
+      <div className="max-w-[1240px] mx-auto w-full h-full flex-col justify-center">
         <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
           Nuestras especialidades
         </h2>
