@@ -36,22 +36,19 @@ const Contact = () => {
                 <div className="pt-1">
                   <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
                 </div>
-                <p>
-                  Avenida Kennedy #7600, 4° piso, Vitacura (El acceso al
-                  edificio es por la calle Wisconsin)
-                </p>
+                <p>Avenida Pedro Fontova 6651, Local 33, Huechuraba Santiago</p>
               </div>
               <div className="px-6 py-2 flex items-start">
                 <div className="pt-1">
                   <FaPhoneAlt color={"#2cd5c4"} className="mr-3 size-4" />
                 </div>
-                <p>+5622428 8900</p>
+                <p>+569 4098 7902</p>
               </div>
               <div className="px-6 py-2 flex items-start">
                 <div className="pt-1">
                   <IoIosMailOpen color={"#2cd5c4"} className="mr-3 size-4" />
                 </div>
-                <p>contacto@clinicaoph.cl</p>
+                <p>clinicadentaltorrealba@gmail.com</p>
               </div>
               <div className="px-6 py-2 flex items-start">
                 <div className="pt-1">
