@@ -147,16 +147,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
             <FaFacebook />
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-3000">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
             <FaInstagram />
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
             <FaWhatsapp />
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
             <IoIosMail />
           </div>
         </div>
