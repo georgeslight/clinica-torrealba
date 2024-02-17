@@ -232,7 +232,7 @@ const Navbar = () => {
                       "text-[#2cd5c4] font-bold": selected === "/#team",
                     })}
                   >
-                    Nosotros
+                    Equipo Dental
                   </li>
                 </Link>
                 <Link
@@ -246,14 +246,31 @@ const Navbar = () => {
                       setSelected("/#expertise");
                     }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "/#expertise",
+                      "text-[#2cd5c4] font-bold": selected === "#expertise",
                     })}
                   >
                     Especialidades
                   </li>
                 </Link>
+                {/*<Link*/}
+                {/*  href="/"*/}
+                {/*  // scroll={false}*/}
+                {/*  // className={`${didot.className} antialiased`}*/}
+                {/*>*/}
+                {/*  <li*/}
+                {/*    onClick={() => {*/}
+                {/*      setSide(false);*/}
+                {/*      setSelected("");*/}
+                {/*    }}*/}
+                {/*    className={clsx("py-4 text-sm", {*/}
+                {/*      "text-[#2cd5c4] font-bold": selected === "",*/}
+                {/*    })}*/}
+                {/*  >*/}
+                {/*    Equipo Dental*/}
+                {/*  </li>*/}
+                {/*</Link>*/}
                 <Link
-                  href="/"
+                  href="/#contact"
                   // scroll={false}
                   // className={`${didot.className} antialiased`}
                 >
@@ -263,24 +280,7 @@ const Navbar = () => {
                       setSelected("");
                     }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "",
-                    })}
-                  >
-                    Equipo Dental
-                  </li>
-                </Link>
-                <Link
-                  href="/"
-                  // scroll={false}
-                  // className={`${didot.className} antialiased`}
-                >
-                  <li
-                    onClick={() => {
-                      setSide(false);
-                      setSelected("");
-                    }}
-                    className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "",
+                      "text-[#2cd5c4] font-bold": selected === "#contact",
                     })}
                   >
                     Contacto
