@@ -8,7 +8,7 @@ export default function Location() {
     <main>
       <Navbar />
       <Map />
-      {/*<Contact />*/}
+      <Contact />
       <Footer />
     </main>
   );
