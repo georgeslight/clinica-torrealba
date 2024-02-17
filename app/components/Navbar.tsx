@@ -67,9 +67,9 @@ const Navbar = () => {
       className={
         nav
           ? shadow
-            ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
-            : "fixed w-full h-20 z-[100] bg-[#ecf0f3] transition-transform duration-300"
-          : "fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
+            ? "px-8 fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
+            : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] transition-transform duration-300"
+          : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
@@ -127,7 +127,7 @@ const Navbar = () => {
             {/*    onClick={() => setSelected("")}*/}
             {/*    className={clsx(*/}
             {/*      "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",*/}
-            {/*      { "text-[#2cd5c4] font-bold": selected === "/" },*/}
+            {/*      { "text-[#2cd5c4] fonts-bold": selected === "/" },*/}
             {/*    )}*/}
             {/*  >*/}
             {/*    Equipo Dental*/}
@@ -263,7 +263,7 @@ const Navbar = () => {
                 {/*      setSelected("");*/}
                 {/*    }}*/}
                 {/*    className={clsx("py-4 text-sm", {*/}
-                {/*      "text-[#2cd5c4] font-bold": selected === "",*/}
+                {/*      "text-[#2cd5c4] fonts-bold": selected === "",*/}
                 {/*    })}*/}
                 {/*  >*/}
                 {/*    Equipo Dental*/}
