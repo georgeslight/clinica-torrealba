@@ -10,8 +10,8 @@ import { TbMapSearch } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="p-4 md:p-8 lg:p-10">
-      <div className="mx-auto max-w-screen-xl text-center">
+    <footer className="px-4 py-16 md:p-8 lg:p-10">
+      <div className="mx-auto pb-16 max-w-screen-xl text-center">
         {/*<a*/}
         {/*  href="#"*/}
         {/*  className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"*/}
@@ -23,7 +23,7 @@ const Footer = () => {
         {/*  Open-source library of over 400+ web components and interactive*/}
         {/*  elements built for better web.*/}
         {/*</p>*/}
-        <ul className="flex flex-wrap justify-center items-center mb-6">
+        <ul className="flex flex-wrap justify-center items-center p-4">
           <li>
             <a
               href="#home"
@@ -73,7 +73,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <ul className="flex flex-wrap justify-center items-center mb-6">
+        <ul className="flex flex-wrap justify-center items-center p-4">
           <li>
             <FaFacebook className="m-4 hover:text-gray-600 md:mr-6 text-gray-400 size-5" />
           </li>
@@ -93,7 +93,7 @@ const Footer = () => {
             <TbMapSearch className="m-4 hover:text-gray-600 md:mr-6 text-gray-400 size-5" />
           </li>
         </ul>
-        <span className="text-sm text-gray-500 sm:text-center ">
+        <span className="text-sm text-gray-500 sm:text-center p-4">
           © 2020 Clinica Dental Torrealba. Todos los derechos reservados.
         </span>
       </div>
