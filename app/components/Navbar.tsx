@@ -103,7 +103,7 @@ const Navbar = () => {
                   { "text-[#2cd5c4] font-bold": selected === "/#team" },
                 )}
               >
-                Nosotros
+                Equipo Dental
               </li>
             </Link>
             <Link
@@ -122,18 +122,18 @@ const Navbar = () => {
                 Especialidades
               </li>
             </Link>
-            <Link href="/" className={`${didot.className} antialiased`}>
-              <li
-                onClick={() => setSelected("")}
-                className={clsx(
-                  "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": selected === "/" },
-                )}
-              >
-                Equipo Dental
-              </li>
-            </Link>
-            <Link href="/" className={`${didot.className} antialiased`}>
+            {/*<Link href="/" className={`${didot.className} antialiased`}>*/}
+            {/*  <li*/}
+            {/*    onClick={() => setSelected("")}*/}
+            {/*    className={clsx(*/}
+            {/*      "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",*/}
+            {/*      { "text-[#2cd5c4] font-bold": selected === "/" },*/}
+            {/*    )}*/}
+            {/*  >*/}
+            {/*    Equipo Dental*/}
+            {/*  </li>*/}
+            {/*</Link>*/}
+            <Link href="/#contact" className={`${didot.className} antialiased`}>
               <li
                 onClick={() => setSelected("")}
                 className={clsx(
