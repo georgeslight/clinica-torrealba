@@ -27,16 +27,26 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-4 w-full h-auto p-4">
             <div className="p-4">
+              {/*<div>*/}
+              {/*  <h3 className="py-2 uppercase text-[#2cd5c4] text-center font-bold">*/}
+              {/*    Huechuraba*/}
+              {/*  </h3>*/}
+              {/*</div>*/}
               <div>
-                <h3 className="py-2 uppercase text-[#2cd5c4] text-center font-bold">
-                  Vitacura
-                </h3>
-              </div>
-              <div className="px-6 py-2 flex items-start">
-                <div className="pt-1">
-                  <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
+                <div className="px-6 py-2 flex items-start">
+                  <div className="pt-1">
+                    <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
+                  </div>
+                  <p>
+                    Avenida Pedro Fontova 6651, Local 33, Huechuraba Santiago
+                  </p>
                 </div>
-                <p>Avenida Pedro Fontova 6651, Local 33, Huechuraba Santiago</p>
+                <Link
+                  href="/location"
+                  className="inline-block bg-[#2cd5c4] hover:bg-[#1bb3a6] text-white py-1 px-4 rounded-2xl mt-1 ml-12 mb-4 text-center"
+                >
+                  Ver Ubicación
+                </Link>
               </div>
               <div className="px-6 py-2 flex items-start">
                 <div className="pt-1">

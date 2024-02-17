@@ -12,17 +12,19 @@ const Skills = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {expertise.map((image, index) => (
             <div
-              className="shadow-lg rounded-lg hover:scale-105 ease-in duration-300 flex flex-col items-center max-w-[300px] mx-auto"
+              className="rounded-md flex flex-col items-center max-w-[300px] mx-auto"
               key={index}
             >
-              {/*<div className="flex flex-col items-center max-w-[300px] mx-auto">*/}
-              {/*<div className="m-auto pb-3">*/}
+              {/*<div*/}
+              {/*  className="shadow-lg rounded-lg hover:scale-105 ease-in duration-300 flex flex-col items-center max-w-[300px] mx-auto"*/}
+              {/*  key={index}*/}
+              {/*>*/}
               <Image
                 src={image.src}
                 alt={image.alt}
                 width="300"
                 height="200"
-                className={"rounded-lg"}
+                className={"rounded-md"}
               />
               {/*</div>*/}
               <div className="flex items-center justify-center py-3">
