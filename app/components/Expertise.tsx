@@ -24,7 +24,7 @@ const Skills = () => {
                 alt={image.alt}
                 width="300"
                 height="200"
-                className={"rounded-md"}
+                className="rounded-md px-12"
               />
               {/*</div>*/}
               <div className="flex items-center justify-center py-3">
