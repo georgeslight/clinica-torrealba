@@ -45,39 +45,44 @@ const Main = () => {
             />
             <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80 px-16 py-16">
               <h2 className=" justify-center text-white uppercase font-light">
-                <span className="font-bold">Bienvenidos</span> a OPH Dental
+                <span className="font-bold">similique</span> Lorem ipsum dolor
               </h2>
               <h3 className="justify-center text-white font-light py-8">
-                Odontología Digital con CEREC
+                quis eripuit ponderum singulis
               </h3>
               <p className="justify-center text-white text-wrap pb-10 text-sm">
-                El CEREC es un elemento central en el desarrollo de la
-                Odontología en OPH Dental. <br />
-                Nuestro equipo de profesionales es pionero en Chile y Sudamérica
-                en la utilización de esta tecnología. Fuimos los primeros en
-                realizar una restauración CEREC iniciando el desarrollo de la
-                Odontología Digital en Chile.
-                <br /> Hoy en día nos mantenemos como líderes siendo la única
-                clínica con más de un equipo de la línea PRIMESCAN (último
-                modelo CEREC) y son parte de nuestro STAFF casi la mitad de los
-                instructores CEREC actuales en Chile. ¿Qué es CEREC? Se describe
-                como un sistema CAD-CAM para realizar restauraciones dentales.
-                Esto es la obtención de un modelo digital a partir de una cámara
-                intraoral, el posterior diseño en un computador y luego la
-                fabricación con materiales de alta estética y resistencia en un
-                sistema de un torno computarizado. Esto permite tratamientos en
-                muy poco tiempo (en una sesión) y de altísima durabilidad.
-                <br /> Pero esto no es todo, ya que la integración de los
-                modelos obtenidos a partir de la cámara permiten hacer análisis
-                virtual de la oclusión, generación de guías quirúrgicas para
-                tratamientos de implantes mediante la unión con sistemas
-                radiológicos, realizar estudios digitales de ortodoncia y
-                creación de aparatos mediante una impresora 3D para controlar el
-                bruxismo.
-                <br /> Además esto permite que nuestro laboratorio pueda
-                realizar tratamientos de mayor complejidad en materiales como el
-                zirconio y cerámicas de disilicatos para prótesis fija unitaria
-                (corona) y plural (puentes).
+                ridens autem ac mauris vituperatoribus tempor persius has
+                habemus explicari appetere deseruisse sociosqu reprimique in.
+                <br />
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+                <br /> possit sed lacinia semper error facilis sapientem
+                ocurreret curabitur euripidis esse malesuada lectus maiorum quo
+                ceteros nisl massa iaculis curae repudiare vituperatoribus
+                malesuada taciti instructior indoctum liber ornatus litora
+                lectus ornatus ludus mentitum detraxit constituto purus class
+                comprehensam dolore impetus simul animal sem arcu efficitur
+                facilisi ultricies senectus id eget possim evertitur
+                vituperatoribus lorem posuere definiebas voluptaria vis laudem
+                nisl iaculis falli ea volutpat percipit qui detraxit fuisset
+                vivamus iuvaret repudiare noluisse convenire inceptos dicant
+                facilis iudicabit mauris iaculis maecenas voluptatum mandamus
+                quaerendum graeco no fusce nulla ludus venenatis constituto
+                appetere eirmod ridiculus electram dis ac consul persecuti
+                bibendum inani.
+                <br /> impetus offendit qualisque tellus sumo suscipit
+                honestatis eripuit doctus numquam comprehensam bibendum iusto
+                vitae tractatos suscipiantur ad melius dicit causae laoreet
+                veniam ex varius eos eloquentiam suscipit in dicunt blandit
+                nullam consequat vidisse harum ornare eget interesset elaboraret
+                inciderint platonem atomorum mel non suscipit habeo propriae
+                diam conubia leo definiebas.
+                <br /> constituam faucibus deterruisset dicat proin noluisse
+                error alienum torquent mattis evertitur efficiantur varius
+                sodales prodesset facilisis vim nisl imperdiet elitr posuere
+                tamquam eirmod orci suavitate.
               </p>
             </div>
           </div>
