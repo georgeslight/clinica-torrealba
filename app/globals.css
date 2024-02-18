@@ -12,7 +12,7 @@ html{
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply font-bold font-helvetica
+        @apply font-bold
     }
 
     h1 {
@@ -30,17 +30,4 @@ html{
     button {
         @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
     }
-
-    p {
-        @apply font-helvetica;
-    }
-
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("/public/fonts/HelveticaNeue.woff") format("woff");
-        font-weight: normal;
-        font-size: medium;
-        font-display: swap;
-    }
-
 }
