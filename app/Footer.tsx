@@ -20,7 +20,7 @@ const Footer = () => {
         {/*  <span>Flowbite</span>*/}
         {/*</a>*/}
         {/*<p className="my-6 text-gray-500 dark:text-gray-400">*/}
-        {/*  Open-source library of over 400+ web components and interactive*/}
+        {/*  Open-source library of over 400+ web ui and interactive*/}
         {/*  elements built for better web.*/}
         {/*</p>*/}
         <ul className="flex flex-wrap justify-center items-center p-4">

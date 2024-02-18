@@ -13,7 +13,6 @@ import {
 import { IoIosMail } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { didot, imb_plex } from "@/app/ui/fonts";
 import { logoNombre } from "@/lib/images";
 
 const Navbar = () => {
@@ -83,7 +82,7 @@ const Navbar = () => {
         </div>
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
-            <Link href="/#home" className={`${didot.className} antialiased`}>
+            <Link href="/#home" className="font-didot">
               <li
                 onClick={() => setSelected("/#home")}
                 className={clsx(
@@ -94,7 +93,7 @@ const Navbar = () => {
                 Inicio
               </li>
             </Link>
-            <Link href="/#team" className={`${didot.className} antialiased`}>
+            <Link href="/#team" className="font-didot">
               <li
                 onClick={() => setSelected("/#team")}
                 className={clsx(
@@ -105,10 +104,7 @@ const Navbar = () => {
                 Equipo Dental
               </li>
             </Link>
-            <Link
-              href="/#expertise"
-              className={`${didot.className} antialiased`}
-            >
+            <Link href="/#expertise" className="font-didot">
               <li
                 onClick={() => setSelected("/#expertise")}
                 className={clsx(
@@ -121,7 +117,7 @@ const Navbar = () => {
                 Especialidades
               </li>
             </Link>
-            {/*<Link href="/" className={`${didot.className} antialiased`}>*/}
+            {/*<Link href="/" className="font-didot">*/}
             {/*  <li*/}
             {/*    onClick={() => setSelected("")}*/}
             {/*    className={clsx(*/}
@@ -132,7 +128,7 @@ const Navbar = () => {
             {/*    Equipo Dental*/}
             {/*  </li>*/}
             {/*</Link>*/}
-            <Link href="/#contact" className={`${didot.className} antialiased`}>
+            <Link href="/#contact" className="font-didot">
               <li
                 onClick={() => setSelected("")}
                 className={clsx(
@@ -203,7 +199,7 @@ const Navbar = () => {
                 <Link
                   href="/#home"
                   // scroll={false}
-                  // className={`${didot.className} antialiased`}
+                  className="font-didot"
                 >
                   <li
                     onClick={() => {
@@ -220,7 +216,7 @@ const Navbar = () => {
                 <Link
                   href="/#team"
                   // scroll={false}
-                  // className={`${didot.className} antialiased`}
+                  className="font-didot"
                 >
                   <li
                     onClick={() => {
@@ -237,7 +233,7 @@ const Navbar = () => {
                 <Link
                   href="/#expertise"
                   // scroll={false}
-                  // className={`${didot.className} antialiased`}
+                  className="font-didot"
                 >
                   <li
                     onClick={() => {
@@ -254,7 +250,7 @@ const Navbar = () => {
                 {/*<Link*/}
                 {/*  href="/"*/}
                 {/*  // scroll={false}*/}
-                {/*  // className={`${didot.className} antialiased`}*/}
+                {/*  // className="font-didot"*/}
                 {/*>*/}
                 {/*  <li*/}
                 {/*    onClick={() => {*/}
@@ -271,7 +267,7 @@ const Navbar = () => {
                 <Link
                   href="/#contact"
                   // scroll={false}
-                  // className={`${didot.className} antialiased`}
+                  className="font-didot"
                 >
                   <li
                     onClick={() => {

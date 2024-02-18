@@ -1,7 +1,7 @@
-import Navbar from "@/app/components/Navbar";
-import Map from "@/app/components/Map";
-import Contact from "@/app/components/Contact";
-import Footer from "@/app/components/Footer";
+import Navbar from "@/app/ui/Navbar";
+import Map from "@/app/ui/ubicacion/Map";
+import Contact from "@/app/ui/Contact";
+import Footer from "@/app/Footer";
 
 export default function Location() {
   return (

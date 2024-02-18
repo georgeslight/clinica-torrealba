@@ -11,17 +11,15 @@ import { IoIosMailOpen } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:h-full p-2 py-16">
-      <div className="max-w-[1240px] mx-auto w-full">
+    <div id="contact" className="w-full lg:h-full py-16">
+      <div className="max-w-[1240px] mx-auto w-full flex-col justify-center">
         <div className="grid lg:grid-cols-8 gap-8">
           {/* left */}
-          <div className="col-span-4 w-full h-full p-4">
+          <div className="col-span-4 w-full h-full">
             <div className="lg:p-4 h-full flex items-center justify-center">
-              <div>
-                <h2 className="py-2 uppercase text-[#2cd5c4] text-center">
-                  ¡Ven a conocernos!
-                </h2>
-              </div>
+              <h2 className="text-[24px] md:text-[2.25rem] tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
+                ¡Ven a conocernos!
+              </h2>
             </div>
           </div>
           {/* right */}

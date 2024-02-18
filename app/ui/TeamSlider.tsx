@@ -17,7 +17,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import TeamCard from "@/app/components/TeamCard";
+import TeamCard from "@/app/ui/TeamCard";
 import { color } from "framer-motion";
 
 SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
