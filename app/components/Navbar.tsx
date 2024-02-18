@@ -65,11 +65,11 @@ const Navbar = () => {
   return (
     <div
       className={
-        nav
-          ? shadow
-            ? "px-8 fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] transition-transform duration-300"
-            : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] transition-transform duration-300"
-          : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
+        // nav?
+        shadow
+          ? "px-8 py-1 fixed w-full shadow-xl z-[100] bg-[#ecf0f3] opacity-80 transition-all duration-500"
+          : "px-8 py-5 fixed w-full z-[100] bg-[#ecf0f3] transition-all duration-500"
+        // : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
@@ -78,8 +78,8 @@ const Navbar = () => {
           alt={logoNombre.alt}
           // sizes={"100vw"}
           style={{
-            width: "auto",
-            height: "60%",
+            width: "20%",
+            height: "auto",
           }}
         />
         <div className="flex-grow">
