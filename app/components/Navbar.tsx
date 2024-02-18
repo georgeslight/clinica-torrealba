@@ -72,16 +72,15 @@ const Navbar = () => {
         // : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
-        <Image
-          src={logoNombre.src}
-          alt={logoNombre.alt}
-          // sizes={"100vw"}
-          style={{
-            width: "20%",
-            height: "auto",
-          }}
-        />
+      <div className="flex justify-between items-center h-full px-6 2xl:px-16">
+        <div className="w-5/6 sm:w-1/3 lg:w-1/5">
+          <Image
+            src={logoNombre.src}
+            alt={logoNombre.alt}
+            // layout="fill"
+            objectFit="contain"
+          />
+        </div>
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
             <Link href="/#home" className={`${didot.className} antialiased`}>
