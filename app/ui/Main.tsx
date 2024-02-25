@@ -28,36 +28,25 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full pb-16 pt-20">
-      <div className="max-w-[1280px] h-full w-full mx-auto relative">
-        <div className="grid lg:grid-cols-2 gap-0 relative">
+    <div id="home" className="w-full pb-16 pt-20 relative md:bg-black">
+      <div className="max-w-[1280px] h-full w-full mx-auto">
+        {/*<div className="grid md:grid-cols-2 gap-0 relative grid-cols-1 md:grid-flow-col">*/}
+        <div className="flex flex-col md:flex-row relative z-10">
           {/* left */}
-          <div className="h-full relative col-span-1">
-            <Image
-              src={T.src}
-              className="object-cover object-center"
-              alt={T.alt}
-              sizes={"100vw"}
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            />
-            <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80 px-16 py-16">
-              <h2 className=" justify-center text-white uppercase font-light">
+          {/*<div className="h-full relative col-span-1">*/}
+          <div className="relative md:w-1/2">
+            <Image src={T.src} className="h-full" alt={T.alt} />
+            <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80 px-8 md:px-10 lg:px-16 py-8 md:py-8 lg:py-16 text-[#ecf0f3]">
+              <h2 className=" justify-center uppercase font-light">
                 <span className="font-bold">similique</span> Lorem ipsum dolor
               </h2>
-              <h3 className="justify-center text-white font-light py-8">
+              <h3 className="justify-center font-light py-[5%]">
                 quis eripuit ponderum singulis
               </h3>
-              <p className="justify-center text-white text-wrap pb-10 text-sm">
+              {/*<p className="justify-center text-wrap pb-10 md:text-xs lg:text-[13px] xl:text-lg">*/}
+              <p className="justify-center text-wrap pb-10 h-[75%] xl:h-full overflow-auto">
                 ridens autem ac mauris vituperatoribus tempor persius has
                 habemus explicari appetere deseruisse sociosqu reprimique in.
-                <br />
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo.
                 <br /> possit sed lacinia semper error facilis sapientem
                 ocurreret curabitur euripidis esse malesuada lectus maiorum quo
                 ceteros nisl massa iaculis curae repudiare vituperatoribus
@@ -72,22 +61,12 @@ const Main = () => {
                 quaerendum graeco no fusce nulla ludus venenatis constituto
                 appetere eirmod ridiculus electram dis ac consul persecuti
                 bibendum inani.
-                <br /> impetus offendit qualisque tellus sumo suscipit
-                honestatis eripuit doctus numquam comprehensam bibendum iusto
-                vitae tractatos suscipiantur ad melius dicit causae laoreet
-                veniam ex varius eos eloquentiam suscipit in dicunt blandit
-                nullam consequat vidisse harum ornare eget interesset elaboraret
-                inciderint platonem atomorum mel non suscipit habeo propriae
-                diam conubia leo definiebas.
-                <br /> constituam faucibus deterruisset dicat proin noluisse
-                error alienum torquent mattis evertitur efficiantur varius
-                sodales prodesset facilisis vim nisl imperdiet elitr posuere
-                tamquam eirmod orci suavitate.
               </p>
             </div>
           </div>
           {/* right */}
-          <div className="h-full relative flex items-center justify-center right-0 mx-auto col-span-1">
+          {/*<div className="h-full relative flex items-center justify-center right-0 mx-auto col-span-1">*/}
+          <div className="relative md:w-1/2 flex items-center justify-center">
             {images.map((image, index) => (
               <div key={index}>
                 {index === currentIndex && (
@@ -106,6 +85,16 @@ const Main = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="hidden md:block absolute bottom-0 inset-x-0 md:h-0 z-10 bg-transparent mx-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 70 100"
+            preserveAspectRatio="none"
+            className="absolute bottom-[25%] h-[55px] lg:h-[100px] w-[100%] z-10"
+          >
+            <path d="M0 0 L50 90 L100 -50 V100 H0" fill="#ecf0f3"></path>
+          </svg>
         </div>
       </div>
     </div>
