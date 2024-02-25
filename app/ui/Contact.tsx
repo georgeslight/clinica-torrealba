@@ -25,18 +25,22 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-4 w-full h-auto p-4">
             <div className="p-4">
-              {/*<div>*/}
-              {/*  <h3 className="py-2 uppercase text-[#2cd5c4] text-center fonts-bold">*/}
-              {/*    Huechuraba*/}
-              {/*  </h3>*/}
-              {/*</div>*/}
               <div>
                 <div className="px-6 py-2 flex items-start">
                   <div className="pt-1">
                     <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
                   </div>
                   <p>
-                    Avenida Pedro Fontova 6651, Local 33, Huechuraba Santiago
+                    Av. Pedro Fontova 6651, Local 33, Huechuraba, Región
+                    Metropolitana
+                  </p>
+                </div>
+                <div className="px-6 py-2 flex items-start">
+                  <div className="pt-1">
+                    <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
+                  </div>
+                  <p>
+                    Estoril 120, Oficina 204, Las Condes, Región Metropolitana
                   </p>
                 </div>
                 <Link
@@ -62,7 +66,7 @@ const Contact = () => {
                 <div className="pt-1">
                   <FaRegCalendarAlt color={"#2cd5c4"} className="mr-3 size-4" />
                 </div>
-                <p>Lunes a Viernes de 9:00 a 18:00 hrs.</p>
+                <p>Lunes a Viernes de 9:00 a 19:30 hrs.</p>
               </div>
             </div>
           </div>
