@@ -83,10 +83,10 @@ const Main = () => {
                   index === currentIndex && (
                     <motion.div
                       key={index}
-                      initial={{ opacity: 0.1 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0.1 }}
-                      transition={{ duration: 0.5 }}
+                      initial={{ opacity: 0.05, x: 15 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0.05, x: -15 }}
+                      transition={{ duration: 0.5, ease: "easeOut" }}
                     >
                       <Image
                         className="object-cover z-1 rounded-sm"
