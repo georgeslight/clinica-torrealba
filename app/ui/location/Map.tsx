@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
-import { white } from "next/dist/lib/picocolors";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Map = () => {
   const mapRef = React.useRef<HTMLDivElement>(null);
@@ -75,14 +73,9 @@ const Map = () => {
   }, []);
 
   return (
-    <div id="map" className="w-full py-16 relative">
-      <div className="max-w-[1240px] mx-auto w-full h-full justify-center pt-16">
-        <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
-          ¡NUESTRO EQUIPO TE ESPERA!
-        </h2>
-        <div style={{ height: "600px" }} ref={mapRef} />
-      </div>
-    </div>
+    <>
+      <div style={{ height: "600px" }} ref={mapRef} />
+    </>
   );
 };
 
