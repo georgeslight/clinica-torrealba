@@ -243,7 +243,7 @@ const Navbar = () => {
                     Especialidades
                   </li>
                 </Link>
-                <Link href="/#contact" scroll={false} className="font-didot">
+                <Link href="/#contact" className="font-didot">
                   <li
                     onClick={() => {
                       setSide(false);
