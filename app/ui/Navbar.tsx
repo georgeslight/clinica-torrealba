@@ -82,7 +82,7 @@ const Navbar = () => {
             <Image
               src={logoNombre.src}
               alt={logoNombre.alt}
-              objectFit="contain"
+              className={"object-contain"}
               onClick={() => setSelected("/#home")}
             />
           </Link>
