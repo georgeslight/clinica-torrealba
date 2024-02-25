@@ -10,7 +10,7 @@ import { TbMapSearch } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-16 md:p-8 lg:p-10">
+    <footer className="px-4 py-16 md:p-8 lg:p-10 text-center border-y-[1px] border-gray-500 mx-auto max-w-[90%]">
       <div className="mx-auto pb-16 max-w-screen-xl text-center">
         {/*<a*/}
         {/*  href="#"*/}
@@ -37,7 +37,7 @@ const Footer = () => {
               href="#team"
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
-              Equipo Dental
+              Blog
             </a>
           </li>
           <li>
@@ -45,7 +45,7 @@ const Footer = () => {
               href="#expertise"
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
-              Especialidades
+              Jobs
             </a>
           </li>
           <li>
@@ -53,7 +53,7 @@ const Footer = () => {
               href="#contact"
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
-              Contact
+              Press
             </a>
           </li>
           <li>
@@ -61,7 +61,7 @@ const Footer = () => {
               href="#contact"
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
-              Ubicación
+              Accessibility
             </a>
           </li>
           <li>
@@ -69,7 +69,7 @@ const Footer = () => {
               href="#contact"
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
-              Consulta
+              Partners
             </a>
           </li>
         </ul>
