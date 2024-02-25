@@ -76,7 +76,7 @@ const Main = () => {
           </div>
           {/* right */}
           {/*<div className="h-full relative flex items-center justify-center right-0 mx-auto col-span-1">*/}
-          <div className="relative md:w-1/2 flex items-center justify-center">
+          <div className="relative md:w-1/2 flex items-center justify-center bg-black">
             <AnimatePresence mode={"wait"}>
               {images.map(
                 (image, index) =>
