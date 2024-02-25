@@ -1,30 +1,40 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { images, T } from "@/lib/images";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
   // State to hold the current image index
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Effect to handle image changing
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Check if currentIndex is at the last image, reset to 0, else increment
+  // Ref to store the interval ID
+  const intervalRef = useRef<NodeJS.Timeout | number>();
+
+  const startInterval = () => {
+    // clear existing interval if any
+    if (intervalRef.current) clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1,
       );
     }, 5000); // Change image every 5 seconds
+  };
 
+  // Effect to handle image changing
+  useEffect(() => {
+    startInterval();
     // Clear interval on component unmount
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalRef.current);
   }, []);
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1,
     );
+    startInterval(); // restart interval
   };
 
   return (
@@ -67,23 +77,32 @@ const Main = () => {
           {/* right */}
           {/*<div className="h-full relative flex items-center justify-center right-0 mx-auto col-span-1">*/}
           <div className="relative md:w-1/2 flex items-center justify-center">
-            {images.map((image, index) => (
-              <div key={index}>
-                {index === currentIndex && (
-                  <Image
-                    className="object-cover z-1"
-                    src={image.src}
-                    alt={image.alt}
-                    onClick={nextImage}
-                    sizes={"100vw"}
-                    style={{
-                      width: "110%",
-                      height: "auto",
-                    }}
-                  />
-                )}
-              </div>
-            ))}
+            <AnimatePresence mode={"wait"}>
+              {images.map(
+                (image, index) =>
+                  index === currentIndex && (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0.1 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0.1 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <Image
+                        className="object-cover z-1 rounded-sm"
+                        src={image.src}
+                        alt={image.alt}
+                        onClick={nextImage}
+                        sizes={"100vw"}
+                        style={{
+                          width: "110%",
+                          height: "auto",
+                        }}
+                      />
+                    </motion.div>
+                  ),
+              )}
+            </AnimatePresence>
           </div>
         </div>
         <div className="hidden md:block absolute bottom-0 inset-x-0 md:h-0 z-10 bg-transparent mx-auto">
