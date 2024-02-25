@@ -94,7 +94,7 @@ const Footer = () => {
           </li>
         </ul>
         <span className="text-sm text-gray-500 sm:text-center p-4">
-          © 2020 Clinica Dental Torrealba. Todos los derechos reservados.
+          © 2024 Clinica Dental Torrealba. Todos los derechos reservados.
         </span>
       </div>
     </footer>
