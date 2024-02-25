@@ -34,7 +34,7 @@ const Map = () => {
       //   map options
       const mapOptions: google.maps.MapOptions = {
         center: center,
-        zoom: 12,
+        zoom: window.innerWidth <= 500 ? 11 : 12,
         mapId: "Clinica Torrealba",
       };
 
