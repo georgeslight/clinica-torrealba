@@ -36,7 +36,7 @@ const Main = () => {
           {/*<div className="h-full relative col-span-1">*/}
           <div className="relative md:w-1/2 xl:mt-10 2xl:mt-24">
             <Image src={T.src} className="h-full" alt={T.alt} />
-            <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80 px-8 md:px-10 lg:px-16 py-8 md:py-8 lg:py-16 text-[#ecf0f3]">
+            <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16 py-8 md:py-8 lg:py-16 text-[#ecf0f3]">
               <h2 className=" justify-center uppercase font-light">
                 <span className="font-bold">similique</span> Lorem ipsum dolor
               </h2>
