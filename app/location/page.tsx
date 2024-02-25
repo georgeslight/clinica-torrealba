@@ -1,5 +1,5 @@
 import Navbar from "@/app/ui/Navbar";
-import Map from "@/app/ui/ubicacion/Map";
+import Map from "@/app/ui/location/Map";
 import Contact from "@/app/ui/Contact";
 import Footer from "@/app/Footer";
 

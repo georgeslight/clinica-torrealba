@@ -4,26 +4,27 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaWhatsapp,
-  FaWhatsappSquare,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { logoNombre } from "@/lib/images";
+import { usePathname } from "next/navigation";
+import { router } from "next/client";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [nav, setNav] = useState(true);
   const [side, setSide] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [selected, setSelected] = useState("/#home");
   const toggleSide = () => {
     setSide(!side);
   };
-  const [shadow, setShadow] = useState(false);
-  const [selected, setSelected] = useState("/#home");
+
+  // navigation
+  useEffect(() => {
+    setSelected(pathname);
+  }, [pathname]);
 
   // handle shadow effect
   useEffect(() => {
@@ -61,6 +62,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const goHome = () => {
+  //   router.push = "/#home";
+  // };
+
   return (
     <div
       className={
@@ -73,12 +78,14 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center h-full px-6 2xl:px-16">
         <div className="w-5/6 sm:w-1/3 lg:w-1/5">
-          <Image
-            src={logoNombre.src}
-            alt={logoNombre.alt}
-            // layout="fill"
-            objectFit="contain"
-          />
+          <Link href="/">
+            <Image
+              src={logoNombre.src}
+              alt={logoNombre.alt}
+              objectFit="contain"
+              onClick={() => setSelected("/#home")}
+            />
+          </Link>
         </div>
         <div className="flex-grow">
           <ul className="hidden lg:flex justify-center">
@@ -117,23 +124,12 @@ const Navbar = () => {
                 Especialidades
               </li>
             </Link>
-            {/*<Link href="/" className="font-didot">*/}
-            {/*  <li*/}
-            {/*    onClick={() => setSelected("")}*/}
-            {/*    className={clsx(*/}
-            {/*      "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",*/}
-            {/*      { "text-[#2cd5c4] fonts-bold": selected === "/" },*/}
-            {/*    )}*/}
-            {/*  >*/}
-            {/*    Equipo Dental*/}
-            {/*  </li>*/}
-            {/*</Link>*/}
             <Link href="/#contact" className="font-didot">
               <li
-                onClick={() => setSelected("")}
+                onClick={() => setSelected("/#contact")}
                 className={clsx(
                   "ml-10 text-sm uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
-                  { "text-[#2cd5c4] font-bold": selected === "/" },
+                  { "text-[#2cd5c4] font-bold": selected === "/#contact" },
                 )}
               >
                 Contacto
@@ -241,41 +237,20 @@ const Navbar = () => {
                       setSelected("/#expertise");
                     }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "#expertise",
+                      "text-[#2cd5c4] font-bold": selected === "/#expertise",
                     })}
                   >
                     Especialidades
                   </li>
                 </Link>
-                {/*<Link*/}
-                {/*  href="/"*/}
-                {/*  // scroll={false}*/}
-                {/*  // className="font-didot"*/}
-                {/*>*/}
-                {/*  <li*/}
-                {/*    onClick={() => {*/}
-                {/*      setSide(false);*/}
-                {/*      setSelected("");*/}
-                {/*    }}*/}
-                {/*    className={clsx("py-4 text-sm", {*/}
-                {/*      "text-[#2cd5c4] fonts-bold": selected === "",*/}
-                {/*    })}*/}
-                {/*  >*/}
-                {/*    Equipo Dental*/}
-                {/*  </li>*/}
-                {/*</Link>*/}
-                <Link
-                  href="/#contact"
-                  // scroll={false}
-                  className="font-didot"
-                >
+                <Link href="/#contact" scroll={false} className="font-didot">
                   <li
                     onClick={() => {
                       setSide(false);
-                      setSelected("");
+                      setSelected("/#contact");
                     }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "#contact",
+                      "text-[#2cd5c4] font-bold": selected === "/#contact",
                     })}
                   >
                     Contacto
@@ -284,9 +259,6 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="pt-40 w-3/4 absolute inset-x-[10%] bottom-10">
-              {/*<p className={`${didot.className} antialiased tracking-widest`}>*/}
-              {/*    Conectemos*/}
-              {/*</p>*/}
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="flex items-ceter justify-center rounded-full w-8 h-8 shadow-lg shadow-gray-400 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaFacebook />
