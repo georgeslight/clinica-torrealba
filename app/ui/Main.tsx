@@ -87,6 +87,7 @@ const Main = () => {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0.05, x: -15 }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
+                      className={"h-full w-full"}
                     >
                       <Image
                         className="object-cover z-1 rounded-sm"
