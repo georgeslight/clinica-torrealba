@@ -17,7 +17,7 @@ const Contact = () => {
           {/* left */}
           <div className="col-span-4 w-full h-full">
             <div className="lg:p-4 h-full flex items-center justify-center">
-              <h2 className="text-[24px] md:text-[2.25rem] tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
+              <h2 className="font-didot text-[24px] md:text-[2.25rem] tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
                 ¡Ven a conocernos!
               </h2>
             </div>

@@ -26,7 +26,7 @@ const TeamSlider = () => {
   return (
     <div id="team" className="w-full py-16">
       <div className="max-w-[1240px] mx-auto w-full h-full justify-center">
-        <h2 className="tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
+        <h2 className="font-didot tracking-widest uppercase text-[#2cd5c4] py-10 text-center items-center">
           Nuestro Equipo
         </h2>
         <div className="w-full">
