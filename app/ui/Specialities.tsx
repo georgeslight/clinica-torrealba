@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { specialities } from "@/lib/specialities";
+import Link from "next/link";
 
 const Skills = () => {
   return (
@@ -15,7 +16,11 @@ const Skills = () => {
               className="rounded-md flex flex-col items-center max-w-[350px] mx-auto"
               key={index}
             >
-              <div className="hover:underline underline-offset-2 decoration-2 decoration-[#2cd5c4] hover:scale-105 ease-in-out duration-300">
+              <Link
+                href={`/servicios/${image.route}`}
+                key={index}
+                className="hover:underline underline-offset-2 decoration-2 decoration-[#2cd5c4] hover:scale-105 ease-in-out duration-300"
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -30,7 +35,7 @@ const Skills = () => {
                     {image.title}
                   </h3>
                 </div>
-              </div>
+              </Link>
               <button></button>
               <p className={"text-center px-3"}>{image.description}</p>
               {/*</div>*/}

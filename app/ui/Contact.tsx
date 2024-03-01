@@ -44,7 +44,7 @@ const Contact = () => {
                   </p>
                 </div>
                 <Link
-                  href="/location"
+                  href="/ubicacion"
                   className="inline-block bg-[#2cd5c4] hover:bg-[#1bb3a6] text-white py-1 px-4 rounded-2xl mt-1 ml-12 mb-4 text-center"
                 >
                   Ver Ubicación
