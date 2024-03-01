@@ -15,15 +15,23 @@ const Skills = () => {
               className="rounded-md flex flex-col items-center max-w-[350px] mx-auto"
               key={index}
             >
-              {/*<div*/}
-              {/*  className="shadow-lg rounded-lg hover:scale-105 ease-in duration-300 flex flex-col items-center max-w-[300px] mx-auto"*/}
-              {/*  key={index}*/}
-              {/*>*/}
-              <Image src={image.src} alt={image.alt} className="rounded-t-md" />
-              {/*</div>*/}
-              <div className="flex items-center justify-center py-3">
-                <h3 className={"text-center text-[#2cd5c4]"}>{image.title}</h3>
+              <div className="hover:underline underline-offset-2 decoration-2 decoration-[#2cd5c4] hover:scale-105 ease-in-out duration-300">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  className="rounded-t-md"
+                />
+                <div className="flex items-center justify-center py-3">
+                  <h3
+                    className={
+                      "text-center text-[#2cd5c4] font-didot font-bold text-xl"
+                    }
+                  >
+                    {image.title}
+                  </h3>
+                </div>
               </div>
+              <button></button>
               <p className={"text-center px-3"}>{image.description}</p>
               {/*</div>*/}
             </div>
