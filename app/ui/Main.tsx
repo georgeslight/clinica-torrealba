@@ -38,23 +38,20 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full pb-16 pt-20 relative md:bg-black">
+    <div id="home" className="w-full pt-16 lg:pt-0 relative md:bg-black">
       <div className="max-w-[1280px] h-full w-full mx-auto">
-        {/*<div className="grid md:grid-cols-2 gap-0 relative grid-cols-1 md:grid-flow-col">*/}
         <div className="flex flex-col md:flex-row relative z-10">
           {/* left */}
-          {/*<div className="h-full relative col-span-1">*/}
           <div className="relative md:w-1/2 xl:mt-10 2xl:mt-24">
             <Image src={T.src} className="h-full" alt={T.alt} />
-            <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16 py-8 md:py-8 lg:py-16 text-[#ecf0f3]">
+            <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
               <h2 className=" justify-center uppercase font-light">
                 <span className="font-bold">similique</span> Lorem ipsum dolor
               </h2>
               <h3 className="justify-center font-light py-[5%]">
                 quis eripuit ponderum singulis
               </h3>
-              {/*<p className="justify-center text-wrap pb-10 md:text-xs lg:text-[13px] xl:text-lg">*/}
-              <p className="justify-center text-wrap pb-10 h-[75%] xl:h-full overflow-auto">
+              <p className="justify-center text-wrap overflow-auto">
                 ridens autem ac mauris vituperatoribus tempor persius has
                 habemus explicari appetere deseruisse sociosqu reprimique in.
                 <br /> possit sed lacinia semper error facilis sapientem
@@ -66,7 +63,6 @@ const Main = () => {
             </div>
           </div>
           {/* right */}
-          {/*<div className="h-full relative flex items-center justify-center right-0 mx-auto col-span-1">*/}
           <div className="relative md:w-1/2 flex items-center justify-center bg-black">
             <AnimatePresence mode={"wait"}>
               {imagesClinic.map(
