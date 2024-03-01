@@ -38,7 +38,7 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full pt-16 lg:pt-0 relative md:bg-black">
+    <div id="home" className="w-full pb-16 lg:pt-0 relative md:bg-black">
       <div className="max-w-[1280px] h-full w-full mx-auto">
         <div className="flex flex-col md:flex-row relative z-10">
           {/* left */}
