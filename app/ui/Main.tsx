@@ -59,18 +59,9 @@ const Main = () => {
                 habemus explicari appetere deseruisse sociosqu reprimique in.
                 <br /> possit sed lacinia semper error facilis sapientem
                 ocurreret curabitur euripidis esse malesuada lectus maiorum quo
-                ceteros nisl massa iaculis curae repudiare vituperatoribus
-                malesuada taciti instructior indoctum liber ornatus litora
-                lectus ornatus ludus mentitum detraxit constituto purus class
-                comprehensam dolore impetus simul animal sem arcu efficitur
-                facilisi ultricies senectus id eget possim evertitur
-                vituperatoribus lorem posuere definiebas voluptaria vis laudem
-                nisl iaculis falli ea volutpat percipit qui detraxit fuisset
-                vivamus iuvaret repudiare noluisse convenire inceptos dicant
-                facilis iudicabit mauris iaculis maecenas voluptatum mandamus
-                quaerendum graeco no fusce nulla ludus venenatis constituto
-                appetere eirmod ridiculus electram dis ac consul persecuti
-                bibendum inani.
+                facilis voluptatum mandamus quaerendum graeco no fusce nulla
+                ludus venenatis constituto appetere eirmod ridiculus electram
+                dis ac consul persecuti bibendum inani.
               </p>
             </div>
           </div>
