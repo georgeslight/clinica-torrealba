@@ -7,7 +7,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import clsx from "clsx";
-import { logoNombre } from "@/lib/images";
+import { logoNombre } from "@/lib/images-clinic";
 import { usePathname } from "next/navigation";
 import { router } from "next/client";
 
@@ -77,7 +77,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center h-full px-6 2xl:px-16">
-        <div className="w-5/6 sm:w-1/3 lg:w-1/5 2xl:w-1/6">
+        <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-[17.5%] 2xl:w-[13%]">
           <Link href="/">
             <Image
               src={logoNombre.src}
@@ -111,13 +111,13 @@ const Navbar = () => {
                 Equipo Dental
               </li>
             </Link>
-            <Link href="/#expertise" className="font-didot">
+            <Link href="/#specialities" className="font-didot">
               <li
-                onClick={() => setSelected("/#expertise")}
+                onClick={() => setSelected("/#specialities")}
                 className={clsx(
                   "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
                   {
-                    "text-[#2cd5c4] font-bold": selected === "/#expertise",
+                    "text-[#2cd5c4] font-bold": selected === "/#specialities",
                   },
                 )}
               >
@@ -227,17 +227,17 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <Link
-                  href="/#expertise"
+                  href="/#specialities"
                   // scroll={false}
                   className="font-didot"
                 >
                   <li
                     onClick={() => {
                       setSide(false);
-                      setSelected("/#expertise");
+                      setSelected("/#specialities");
                     }}
                     className={clsx("py-4 text-sm", {
-                      "text-[#2cd5c4] font-bold": selected === "/#expertise",
+                      "text-[#2cd5c4] font-bold": selected === "/#specialities",
                     })}
                   >
                     Especialidades

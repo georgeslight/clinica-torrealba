@@ -1,5 +1,6 @@
 import Map from "@/app/ui/location/Map";
 import React, { Suspense } from "react";
+import Contact from "@/app/ui/Contact";
 
 export default function Location() {
   return (
@@ -12,6 +13,7 @@ export default function Location() {
           <Map />
         </div>
       </div>
+      <Contact />
     </main>
   );
 }

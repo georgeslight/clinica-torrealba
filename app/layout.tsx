@@ -41,9 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${helvetica.variable}`}>
-        <Navbar />
-        {children}
-        <Contact />
+        <main>
+          <Navbar />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

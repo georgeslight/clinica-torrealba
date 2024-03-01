@@ -1,6 +1,7 @@
 import Main from "@/app/ui/Main";
 import TeamSlider from "@/app/ui/TeamSlider";
-import Expertise from "@/app/ui/Expertise";
+import Expertise from "@/app/ui/Specialities";
+import Contact from "@/app/ui/Contact";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Main />
       <TeamSlider />
       <Expertise />
+      <Contact />
     </main>
   );
 }
