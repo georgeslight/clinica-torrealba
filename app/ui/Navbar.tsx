@@ -7,9 +7,8 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import clsx from "clsx";
-import { logoNombre } from "@/lib/images-clinic";
 import { usePathname } from "next/navigation";
-import { router } from "next/client";
+import logo from "@/public/assets/TORRE-ALBA.png";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -80,8 +79,8 @@ const Navbar = () => {
         <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-[17.5%] 2xl:w-[13%]">
           <Link href="/">
             <Image
-              src={logoNombre.src}
-              alt={logoNombre.alt}
+              src={logo}
+              alt="Logo Nombre Clinica"
               className={"object-contain"}
               onClick={() => setSelected("/#home")}
             />
@@ -174,8 +173,8 @@ const Navbar = () => {
             <div>
               <div className="flex w-full items-center justify-between border-b border-gray-300 my-4">
                 <Image
-                  src={logoNombre.src}
-                  alt={logoNombre.alt}
+                  src={logo}
+                  alt="Logo Nombre Clinica"
                   sizes={"100vw"}
                   style={{
                     width: "75%",
