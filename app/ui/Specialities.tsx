@@ -36,7 +36,6 @@ const Skills = () => {
                   </h3>
                 </div>
               </Link>
-              <button></button>
               <p className={"text-center px-3"}>{image.description}</p>
               {/*</div>*/}
             </div>
