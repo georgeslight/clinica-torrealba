@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import local from "next/font/local";
 import Navbar from "@/app/ui/Navbar";
-import Contact from "@/app/ui/Contact";
 import Footer from "@/app/Footer";
+import Booking from "@/app/ui/Booking";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +44,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
+          <Booking />
         </main>
         <Footer />
       </body>
