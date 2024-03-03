@@ -21,11 +21,7 @@ const Booking = () => {
           >
             <div className="rounded-full bg-[#25D366] p-2.5 w-12 h-12 ml-auto">
               <Link
-                href={
-                  isActive
-                    ? "https://api.whatsapp.com/send/?phone=56940987902&text&type=phone_number&app_absent=0"
-                    : ""
-                }
+                href="https://api.whatsapp.com/send/?phone=56940987902&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -38,11 +34,7 @@ const Booking = () => {
           >
             <div className="rounded-full bg-[#2cd5c4] p-2.5 w-12 h-12 ml-auto">
               <Link
-                href={
-                  isActive
-                    ? "https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
-                    : ""
-                }
+                href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
                 target="_blank"
                 rel="noopener noreferrer"
               >
