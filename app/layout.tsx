@@ -4,7 +4,7 @@ import "./globals.css";
 import local from "next/font/local";
 import Navbar from "@/app/ui/Navbar";
 import Footer from "@/app/Footer";
-import Booking from "@/app/ui/Booking";
+import BookingIcon from "@/app/ui/BookingIcon";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +44,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
-          <Booking />
+          <BookingIcon />
         </main>
         <Footer />
       </body>
