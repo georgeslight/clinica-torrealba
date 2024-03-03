@@ -12,7 +12,7 @@ const Booking = () => {
     <div className="z-50 fixed bottom-[6%] right-[3%] hover:scale-105 ease-in-out duration-300 group">
       <div className="invisible group-hover:visible group-active:visible">
         <Image src={chat_bubble} alt="Speech Buble SVG" className="w-40 h-20" />
-        <p className="absolute bottom-[90px] right-12">
+        <p className="font-helvetica font-bold text-black absolute bottom-[90px] right-12">
           ¡Agenda <br /> tu cita!
         </p>
       </div>
