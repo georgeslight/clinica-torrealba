@@ -4,7 +4,7 @@ import "./globals.css";
 import local from "next/font/local";
 import Navbar from "@/app/ui/Navbar";
 import Footer from "@/app/Footer";
-import BookingIcon from "@/app/ui/BookingIcon";
+import BookingIcon from "@/app/ui/FloatingIcons";
 
 const inter = Inter({ subsets: ["latin"] });
 
