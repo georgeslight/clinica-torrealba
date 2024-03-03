@@ -10,7 +10,11 @@ const Booking = () => {
     <div onClick={() => setIsActive(false)}>
       <div
         className={`z-50 fixed bottom-[10%] right-[15%] lg:right-[5%] group ${isActive ? "active" : ""}`}
-        onClick={(e) => {
+        onMouseDown={(e) => {
+          e.preventDefault();
+          setIsActive(true);
+        }}
+        onTouchStart={(e) => {
           e.stopPropagation();
           setIsActive(true);
         }}
