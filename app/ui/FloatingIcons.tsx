@@ -27,7 +27,6 @@ const Booking = () => {
               ) : (
                 <a
                   onClick={(e) => {
-                    e.preventDefault();
                     setIsActive(true);
                   }}
                 >
@@ -51,7 +50,6 @@ const Booking = () => {
               ) : (
                 <a
                   onClick={(e) => {
-                    e.preventDefault();
                     setIsActive(true);
                   }}
                 >
