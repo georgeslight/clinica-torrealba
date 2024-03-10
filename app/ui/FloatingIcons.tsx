@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 const Booking = () => {
   const [isActive, setIsActive] = useState(false);
   return (
-    <div onClick={() => setIsActive(false)}>
+    <div className="h-screen w-screen">
       <div
         className={`z-50 fixed bottom-[10%] right-[15%] lg:right-[5%] group ${isActive ? "active" : ""}`}
         onTouchStart={(e) => {
