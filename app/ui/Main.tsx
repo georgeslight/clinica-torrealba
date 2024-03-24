@@ -47,7 +47,13 @@ const Main = () => {
         <div className="flex flex-col h-full md:flex-row relative z-10">
           {/* left */}
           <div className="relative h-full mt-16 md:w-1/2 xl:mt-10 2xl: flex items-center justify-center">
-            <Image src={LogoT} className="h-full " alt="Logo T" />
+            <div className="h-[100svh] md:h-full">
+              <Image
+                src={LogoT}
+                className="h-full object-contain"
+                alt="Logo T"
+              />
+            </div>
             <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
               <h2 className="uppercase font-light pb-[5%]">
                 <span className="font-bold text-center">Bienvenidos</span> a
