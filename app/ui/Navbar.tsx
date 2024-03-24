@@ -75,7 +75,7 @@ const Navbar = () => {
         // : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
-      <div className="flex justify-between items-center h-full px-6 2xl:px-16">
+      <div className="flex justify-between items-center h-full 2xl:px-16">
         <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-[17.5%] 2xl:w-[13%]">
           <Link href="/">
             <Image
