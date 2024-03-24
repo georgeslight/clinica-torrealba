@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+// @ts-ignore
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,6 +24,12 @@ const config: Config = {
     //   "screen-lvh": "100lvh",
     //   "screen-dvh": "100dvh",
     // },
+    maxWidth: {
+      "screen-svw": "100svw",
+      "screen-lvw": "100lvw",
+      "screen-dvw": "100dvw",
+      "screen-vw": "100vw",
+    },
   },
   plugins: [],
 };
