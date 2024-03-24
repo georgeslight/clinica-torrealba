@@ -39,7 +39,10 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full h-full lg:pb-16 lg:pt-0 relative bg-black">
+    <div
+      id="home"
+      className="w-full h-full mb-16 md:mb-0 pb-16 lg:pt-0 relative bg-black"
+    >
       <div className="max-w-[1280px] h-full w-full mx-auto">
         <div className="flex flex-col h-screen md:flex-row relative z-10">
           {/* left */}
