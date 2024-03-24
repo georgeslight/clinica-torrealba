@@ -19,23 +19,6 @@ const config: Config = {
         didot: ["Didot", "serif"],
       },
     },
-    // height: {
-    //   "screen-svh": "100svh",
-    //   "screen-lvh": "100lvh",
-    //   "screen-dvh": "100dvh",
-    // },
-    maxWidth: {
-      "screen-svw": "100svw",
-      "screen-lvw": "100lvw",
-      "screen-dvw": "100dvw",
-      "screen-vw": "100vw",
-    },
-    width: {
-      "screen-svw": "100svw",
-      "screen-lvw": "100lvw",
-      "screen-dvw": "100dvw",
-      "screen-vw": "100vw",
-    },
   },
   plugins: [],
 };

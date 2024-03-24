@@ -39,21 +39,21 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className="w-full pb-16 pt-16 lg:pt-0 relative md:bg-black">
+    <div id="home" className="w-full h-full lg:pb-16 lg:pt-0 relative bg-black">
       <div className="max-w-[1280px] h-full w-full mx-auto">
-        <div className="flex flex-col md:flex-row relative z-10">
+        <div className="flex flex-col h-screen md:flex-row relative z-10">
           {/* left */}
-          <div className="relative h-screen-dvw md:w-1/2 xl:mt-10 2xl:mt-24">
-            <Image src={LogoT} className="h-full" alt="Logo T" />
+          <div className="relative h-full mt-16 md:w-1/2 xl:mt-10 2xl: flex items-center justify-center">
+            <Image src={LogoT} className="h-full " alt="Logo T" />
             <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
-              <h2 className=" justify-center uppercase font-light pb-[5%]">
-                <span className="font-bold">Bienvenidos</span> a Clinica Dental
-                Torrealba
+              <h2 className="uppercase font-light pb-[5%]">
+                <span className="font-bold text-center">Bienvenidos</span> a
+                Clinica Dental Torrealba
               </h2>
               {/*<h3 className="justify-center font-light py-[5%]">*/}
               {/*  quis eripuit ponderum singulis*/}
               {/*</h3>*/}
-              <p className="justify-center text-wrap overflow-auto">
+              <p className="text-xl text-wrap overflow-auto">
                 Somos una clínica odontológica y estética en la cual contamos
                 con un equipo de especialistas, lo que permite entregar a
                 nuestros pacientes todos los tratamientos necesarios para su
@@ -80,7 +80,6 @@ const Main = () => {
                         src={image.src}
                         alt={image.alt}
                         onClick={nextImage}
-                        sizes={"100vw"}
                         style={{
                           width: "100%",
                           height: "auto",
