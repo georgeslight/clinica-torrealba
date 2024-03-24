@@ -70,12 +70,12 @@ const Navbar = () => {
       className={
         // nav?
         shadow
-          ? "py-3 2xl:py-2 fixed w-full shadow-xl z-[100] bg-[rgba(236,240,243,0.8)] transition-all duration-500"
-          : "py-5 fixed w-full z-[100] bg-[#ecf0f3] transition-all duration-500"
+          ? "py-3 2xl:py-2 fixed w-full max-w-screen-vw shadow-xl z-[100] bg-[rgba(236,240,243,0.8)] transition-all duration-500"
+          : "py-5 fixed w-full max-w-screen-vw z-[100] bg-[#ecf0f3] transition-all duration-500"
         // : "px-8 fixed w-full h-20 z-[100] bg-[#ecf0f3] -translate-y-full transition-transform duration-300"
       }
     >
-      <div className="flex justify-between items-center h-full px-6 2xl:px-16">
+      <div className="flex justify-between items-center h-full 2xl:px-16">
         <div className="">
           <Link href="/">
             <Image
