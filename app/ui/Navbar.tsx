@@ -76,13 +76,13 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center h-full px-6 2xl:px-16">
-        <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-[17.5%] 2xl:w-[13%]">
+        <div className="">
           <Link href="/">
             <Image
               src={logo}
               alt="Logo Nombre Clinica"
               className={"object-contain"}
-              onClick={() => setSelected("/#home")}
+              onClick={() => setSelected("/")}
             />
           </Link>
         </div>
