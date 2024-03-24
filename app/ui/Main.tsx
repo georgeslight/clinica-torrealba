@@ -43,7 +43,7 @@ const Main = () => {
       <div className="max-w-[1280px] h-full w-full mx-auto">
         <div className="flex flex-col md:flex-row relative z-10">
           {/* left */}
-          <div className="relative md:w-1/2 xl:mt-10 2xl:mt-24">
+          <div className="relative h-screen-dvw md:w-1/2 xl:mt-10 2xl:mt-24">
             <Image src={LogoT} className="h-full" alt="Logo T" />
             <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
               <h2 className=" justify-center uppercase font-light pb-[5%]">

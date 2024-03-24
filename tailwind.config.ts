@@ -30,6 +30,12 @@ const config: Config = {
       "screen-dvw": "100dvw",
       "screen-vw": "100vw",
     },
+    width: {
+      "screen-svw": "100svw",
+      "screen-lvw": "100lvw",
+      "screen-dvw": "100dvw",
+      "screen-vw": "100vw",
+    },
   },
   plugins: [],
 };
