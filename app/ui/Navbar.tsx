@@ -16,8 +16,44 @@ const Navbar = () => {
   const [side, setSide] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [selected, setSelected] = useState("/#home");
+
+  const [startX, setStartX] = useState<number | null>(null);
+  const [startY, setStartY] = useState<number | null>(null);
   const toggleSide = () => {
     setSide(!side);
+  };
+
+  // close sidebar
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const sidebarContent = document.getElementById("sidebar-content");
+    if (!sidebarContent || !sidebarContent.contains(e.target as Node)) {
+      setSide(false);
+    }
+  };
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setStartX(e.touches[0].clientX);
+    setStartY(e.touches[0].clientY);
+  };
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!startX || !startY) {
+      return;
+    }
+
+    const endX = e.touches[0].clientX;
+    const endY = e.touches[0].clientY;
+
+    const diffX = startX - endX;
+    const diffY = startY - endY;
+
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      if (diffX > 0) {
+        // Swiped left
+        setSide(false);
+      }
+    }
+
+    setStartX(null);
+    setStartY(null);
   };
 
   // navigation
@@ -154,16 +190,22 @@ const Navbar = () => {
           <AiOutlineMenu size={25} />
         </div>
 
+        {/* Sidebar */}
         {/* black overlay that covers the whole screen when sidebar is open */}
         <div
+          id="sidebar"
           className={
             side
               ? "lg:hidden fixed left-0 top-0 w-full h-[100%] bg-black/70"
               : ""
           }
+          onClick={handleOverlayClick}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
         >
           {/* When the side variable is true, it fills up 75% of the screen on small devices, 60% of the screen on medium devices and 45% on large devices. When side is false, it seems to be hidden to the left of the screen (due to the style left: [-100%]). */}
           <div
+            id="sidebar-content"
             className={
               side
                 ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[100%] bg-[#ecf0f3] p-10 ease-in duration-500"
@@ -177,16 +219,16 @@ const Navbar = () => {
                   alt="Logo Nombre Clinica"
                   sizes={"100vw"}
                   style={{
-                    width: "75%",
+                    width: "100%",
                     height: "auto",
                   }}
                 />
-                <div
-                  onClick={toggleSide}
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
-                >
-                  <AiOutlineClose />
-                </div>
+                {/*<div*/}
+                {/*  onClick={toggleSide}*/}
+                {/*  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"*/}
+                {/*>*/}
+                {/*  <AiOutlineClose />*/}
+                {/*</div>*/}
               </div>
             </div>
             <div className="py-4 flex flex-col">
