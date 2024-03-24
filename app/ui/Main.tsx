@@ -82,7 +82,7 @@ const Main = () => {
                         onClick={nextImage}
                         sizes={"100vw"}
                         style={{
-                          width: "110%",
+                          width: "100%",
                           height: "auto",
                         }}
                         priority={true}
