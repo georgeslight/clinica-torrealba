@@ -214,15 +214,23 @@ const Navbar = () => {
           >
             <div>
               <div className="flex w-full items-center justify-between border-b border-gray-300 my-4">
-                <Image
-                  src={logo}
-                  alt="Logo Nombre Clinica"
-                  sizes={"100vw"}
-                  style={{
-                    width: "100%",
-                    height: "auto",
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setSide(false);
+                    setSelected("/");
                   }}
-                />
+                >
+                  <Image
+                    src={logo}
+                    alt="Logo Nombre Clinica"
+                    sizes={"100vw"}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                  />
+                </Link>
                 {/*<div*/}
                 {/*  onClick={toggleSide}*/}
                 {/*  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"*/}
