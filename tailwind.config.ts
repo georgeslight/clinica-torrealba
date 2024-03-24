@@ -18,11 +18,11 @@ const config: Config = {
         didot: ["Didot", "serif"],
       },
     },
-    height: {
-      "screen-svh": "100svh",
-      "screen-lvh": "100lvh",
-      "screen-dvh": "100dvh",
-    },
+    // height: {
+    //   "screen-svh": "100svh",
+    //   "screen-lvh": "100lvh",
+    //   "screen-dvh": "100dvh",
+    // },
   },
   plugins: [],
 };
