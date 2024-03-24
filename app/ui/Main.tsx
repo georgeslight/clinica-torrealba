@@ -44,7 +44,7 @@ const Main = () => {
       className="w-full h-full mb-16 md:mb-0 lg:pt-0 relative bg-black"
     >
       <div className="max-w-[1280px] h-full w-full mx-auto">
-        <div className="flex flex-col h-[100svh] md:flex-row relative z-10">
+        <div className="flex flex-col h-[100lvh] md:flex-row relative z-10">
           {/* left */}
           <div className="relative h-full mt-16 md:w-1/2 xl:mt-10 2xl: flex items-center justify-center">
             <Image src={LogoT} className="h-full " alt="Logo T" />
