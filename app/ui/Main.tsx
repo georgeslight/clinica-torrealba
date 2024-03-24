@@ -46,20 +46,18 @@ const Main = () => {
           <div className="relative md:w-1/2 xl:mt-10 2xl:mt-24">
             <Image src={LogoT} className="h-full" alt="Logo T" />
             <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
-              <h2 className=" justify-center uppercase font-light">
-                <span className="font-bold">similique</span> Lorem ipsum dolor
+              <h2 className=" justify-center uppercase font-light pb-[5%]">
+                <span className="font-bold">Bienvenidos</span> a Clinica Dental
+                Torrealba
               </h2>
-              <h3 className="justify-center font-light py-[5%]">
-                quis eripuit ponderum singulis
-              </h3>
+              {/*<h3 className="justify-center font-light py-[5%]">*/}
+              {/*  quis eripuit ponderum singulis*/}
+              {/*</h3>*/}
               <p className="justify-center text-wrap overflow-auto">
-                ridens autem ac mauris vituperatoribus tempor persius has
-                habemus explicari appetere deseruisse sociosqu reprimique in.
-                <br /> possit sed lacinia semper error facilis sapientem
-                ocurreret curabitur euripidis esse malesuada lectus maiorum quo
-                facilis voluptatum mandamus quaerendum graeco no fusce nulla
-                ludus venenatis constituto appetere eirmod ridiculus electram
-                dis ac consul persecuti bibendum inani.
+                Somos una clínica odontológica y estética en la cual contamos
+                con un equipo de especialistas, lo que permite entregar a
+                nuestros pacientes todos los tratamientos necesarios para su
+                salud dental de manera integral.
               </p>
             </div>
           </div>
