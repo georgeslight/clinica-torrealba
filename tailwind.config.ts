@@ -18,7 +18,7 @@ const config: Config = {
         didot: ["Didot", "serif"],
       },
     },
-    minHeight: {
+    height: {
       "screen-svh": "100svh",
       "screen-lvh": "100lvh",
       "screen-dvh": "100dvh",
