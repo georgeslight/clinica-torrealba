@@ -37,7 +37,7 @@ const Booking = () => {
         </div>
         {/* Right Side */}
         <div className="hidden md:relative z-10 md:flex justify-center items-center bg-[#ecf0f3]">
-          <div className="max-w-[320px] mx-auto px-4">
+          <div className="max-w-[320px] mx-auto 2xl:ml-0 px-4">
             <h2 className="font-didot tracking-widest uppercase text-[#2cd5c4] text-left pb-10">
               Reserva tu cita
             </h2>
