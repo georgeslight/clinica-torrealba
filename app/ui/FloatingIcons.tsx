@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { IoMdAdd } from "react-icons/io";
 import { LuCalendarSearch } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
+import { FaPaperPlane } from "react-icons/fa";
 
 const Booking = () => {
   const [isActive, setIsActive] = useState(true);
@@ -48,24 +47,24 @@ const Booking = () => {
         <div className="absolute bottom-0 right-0">
           <div
             className={`transition-all duration-300 transform ease-in-out ${
-              isActive ? "-rotate-90" : ""
+              isActive ? "" : "rotate-90"
             }`}
             onClick={handleClick}
           >
             <div
-              className={`rounded-full p-2 w-12 h-12 ml-auto transition-all duration-300 transform ease-in-out ${isActive ? "bg-[#3A3C44]" : "bg-[#2cd5c4]"}`}
+              className={`rounded-full pt-[9px] pl-[7px] w-12 h-12 ml-auto transition-all duration-300 transform ease-in-out ${isActive ? "bg-[#3A3C44]" : "bg-[#2cd5c4]"}`}
             >
               {isActive && !showCalendar && (
-                <IoMdAdd className="size-8 text-[#2cd5c4]" />
+                <FaPaperPlane className="size-7 text-[#2cd5c4]" />
               )}
               {showCalendar && (
-                <Link
+                <a
                   href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LuCalendarSearch className="size-8" />
-                </Link>
+                  <LuCalendarSearch className="size-8 -rotate-90" />
+                </a>
               )}
             </div>
           </div>
@@ -79,13 +78,13 @@ const Booking = () => {
             className={`rounded-full p-1.5 w-8 h-8 ml-auto transition-all duration-300 transform ease-in-out ${isActive ? " -rotate-90 scale-0" : "bg-[#25D366]"}`}
           >
             {showCalendar && (
-              <Link
+              <a
                 href="https://api.whatsapp.com/send/?phone=56940987902&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaWhatsapp className="size-5" />
-              </Link>
+              </a>
             )}
           </div>
         </div>
