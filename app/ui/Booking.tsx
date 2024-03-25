@@ -13,14 +13,16 @@ const Booking = () => {
             <h2 className="font-didot tracking-widest uppercase pb-4 text-[#2cd5c4]">
               Reserva tu cita
             </h2>
-            <Link
-              href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-2 font-bold text-white bg-[#2cd5c4] rounded-2xl hover:bg-[#1bb3a6] hover:scale-105 ease-in-out duration-300"
-            >
-              Agenda por Dentalink
-            </Link>
+            <div className="hover:scale-105 ease-in-out duration-300">
+              <Link
+                href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-2 font-bold text-white bg-[#2cd5c4] rounded-2xl hover:bg-[#1bb3a6]"
+              >
+                Agenda por Dentalink
+              </Link>
+            </div>
           </div>
         </div>
         {/* Image */}
@@ -39,14 +41,16 @@ const Booking = () => {
             <h2 className="font-didot tracking-widest uppercase text-[#2cd5c4] text-left pb-10">
               Reserva tu cita
             </h2>
-            <Link
-              href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full px-8 sm:px-4 lg:px-8 py-2 font-bold text-white bg-[#2cd5c4] rounded-2xl hover:bg-[#1bb3a6] hover:scale-105 ease-in-out duration-300"
-            >
-              Agenda por Dentalink
-            </Link>
+            <div className="hover:scale-105 ease-in-out duration-300">
+              <Link
+                href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-8 sm:px-4 lg:px-8 py-2 font-bold text-white bg-[#2cd5c4] rounded-2xl hover:bg-[#1bb3a6]"
+              >
+                Agenda por Dentalink
+              </Link>
+            </div>
           </div>
         </div>
       </div>

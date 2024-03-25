@@ -128,7 +128,7 @@ const Navbar = () => {
               <li
                 onClick={() => setSelected("/#home")}
                 className={clsx(
-                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in-out duration-150",
                   { "text-[#2cd5c4] font-bold": selected === "/#home" },
                 )}
               >
@@ -139,7 +139,7 @@ const Navbar = () => {
               <li
                 onClick={() => setSelected("/#team")}
                 className={clsx(
-                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in-out duration-150",
                   { "text-[#2cd5c4] font-bold": selected === "/#team" },
                 )}
               >
@@ -150,7 +150,7 @@ const Navbar = () => {
               <li
                 onClick={() => setSelected("/#specialities")}
                 className={clsx(
-                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in-out duration-150",
                   {
                     "text-[#2cd5c4] font-bold": selected === "/#specialities",
                   },
@@ -163,7 +163,7 @@ const Navbar = () => {
               <li
                 onClick={() => setSelected("/#contact")}
                 className={clsx(
-                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in duration-300",
+                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in-out duration-150",
                   { "text-[#2cd5c4] font-bold": selected === "/#contact" },
                 )}
               >
@@ -173,7 +173,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in-out hover:bg-[#1bb3a6]">
             <a
               href="https://www.facebook.com/profile.php?id=61552994867158"
               target="_blank"
@@ -182,7 +182,7 @@ const Navbar = () => {
               <FaFacebook />
             </a>
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in-out  hover:bg-[#1bb3a6]">
             <a
               href="https://www.instagram.com/clinicatorrealba/"
               target="_blank"
@@ -191,7 +191,7 @@ const Navbar = () => {
               <FaInstagram />
             </a>
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in-out  hover:bg-[#1bb3a6]">
             <a
               href="https://api.whatsapp.com/send/?phone=56940987902&text&type=phone_number&app_absent=0"
               target="_blank"
@@ -200,7 +200,7 @@ const Navbar = () => {
               <FaWhatsapp />
             </a>
           </div>
-          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in">
+          <div className="flex items-ceter justify-center rounded-full w-8 h-8 bg-[#2cd5c4] bg-opacity-70 p-2 cursor-pointer hover:scale-105 ease-in-out  hover:bg-[#1bb3a6]">
             <a
               href="mailto:clinicadentaltorrealba@gmail.com"
               target="_blank"
