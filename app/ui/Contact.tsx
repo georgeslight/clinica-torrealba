@@ -32,16 +32,30 @@ const Contact = () => {
               <div className="pt-1">
                 <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
               </div>
+              {/*<a*/}
+              {/*  href="https://www.google.com/maps/place/Av.+Pedro+Fontova+6651,+8600578+Huechuraba,+Regi%C3%B3n+Metropolitana/@-33.3620955,-70.6727549,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c70014676fe1:0x95ac91d8716be252!8m2!3d-33.3621!4d-70.67018!16s%2Fg%2F11rxnhbln8?entry=ttu"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*  className="hover:underline"*/}
+              {/*>*/}
               <p>
                 Av. Pedro Fontova 6651, Local 33, Huechuraba, Región
                 Metropolitana
               </p>
+              {/*</a>*/}
             </div>
             <div className="px-6 py-2 flex items-start">
               <div className="pt-1">
                 <FaLocationDot color={"#2cd5c4"} className="mr-3 size-4" />
               </div>
+              {/*<a*/}
+              {/*  href="https://www.google.com/maps/place/Estoril+120,+Las+Condes,+Regi%C3%B3n+Metropolitana/@-33.3841889,-70.5353433,17z/data=!3m1!4b1!4m6!3m5!1s0x9662ceaca8d1cd1f:0x2f66c5142b0b4c99!8m2!3d-33.3841934!4d-70.5327684!16s%2Fg%2F11b8zc8mx1?entry=ttu"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*  className="hover:underline"*/}
+              {/*>*/}
               <p>Estoril 120, Oficina 204, Las Condes, Región Metropolitana</p>
+              {/*</a>*/}
             </div>
             <Link
               href="/ubicacion"
@@ -54,13 +68,22 @@ const Contact = () => {
             <div className="pt-1">
               <FaPhoneAlt color={"#2cd5c4"} className="mr-3 size-4" />
             </div>
-            <p>+569 4098 7902</p>
+            <a href="tel:+569 4098 7902" className="hover:underline">
+              +569 4098 7902
+            </a>
           </div>
           <div className="px-6 py-2 flex items-start">
             <div className="pt-1">
               <IoIosMailOpen color={"#2cd5c4"} className="mr-3 size-4" />
             </div>
-            <p>clinicadentaltorrealba@gmail.com</p>
+            <a
+              href="mailto:clinicadentaltorrealba@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              clinicadentaltorrealba@gmail.com
+            </a>
           </div>
           <div className="px-6 py-2 flex items-start">
             <div className="pt-1">
