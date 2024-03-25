@@ -26,52 +26,52 @@ const Footer = () => {
         {/*</p>*/}
         <ul className="flex flex-wrap justify-center items-center p-4">
           <li>
-            <a
-              href="#home"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#team"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#expertise"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               Jobs
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               Press
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               Accessibility
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
             >
               Partners
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="flex flex-wrap justify-center items-center p-4">
