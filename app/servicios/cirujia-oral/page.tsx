@@ -44,7 +44,7 @@ export default async function Cirujia({}) {
       <div className="h-full w-full mx-auto">
         {/*<h2 className="absolute z-50 font-bold text-4xl font-didot uppercase text-[#2cd5c4] tracking-widest flex self-center items-center justify-center py-16 left-1/2 transform translate-x-[-50%]">*/}
         <div className="relative w-ful">
-          <h2 className="font-bold text-5xl font-didot uppercase text-black opacity-80 tracking-widest flex self-center items-center text-center justify-center py-2 md:py-6 my-10 bg-[#2cd5c4] h-auto w-full md:w-1/2 transform md:translate-x-1/2">
+          <h2 className="font-bold text-4xl md:text-5xl font-didot uppercase text-black opacity-80 tracking-widest flex self-center items-center text-center justify-center py-2 md:py-6 my-10 bg-[#2cd5c4] h-auto w-full md:w-1/2 transform md:translate-x-1/2">
             Cirugía oral
           </h2>
           {/*<div className="absolute w-full md:w-[600px] bg-[#2cd5c4] h-14 top-1/3 left-1/2 transform -translate-x-1/2 -z-50" />*/}
