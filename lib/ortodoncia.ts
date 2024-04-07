@@ -1,5 +1,6 @@
 import ortodoncia_tradicional from "@/public/ortodoncia/papada-l.jpg";
 import metal_braces from "@/public/ortodoncia/braces_glasses_1920.jpg";
+import metal_braces2 from "@/public/ortodoncia/braces_glasses_1920-Photoroom.png-Photoroom.png";
 import ceramic_braces from "@/public/ortodoncia/Ceramic-Braces.jpg";
 import aligners from "@/public/ortodoncia/aligners.jpg";
 import { StaticImageData } from "next/image";
@@ -12,7 +13,7 @@ export const ortodoncia: {
   {
     name: "Ortodoncia convencional metálica",
     description: "Realizado con brackets de acero inoxidable.",
-    image: { src: metal_braces, alt: "image alt" },
+    image: { src: metal_braces2, alt: "image alt" },
   },
   {
     name: "Ortodoncia convencional cerámica",
