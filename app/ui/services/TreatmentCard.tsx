@@ -30,7 +30,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
         <div className="w-full text-center flex flex-col items-center">
           <h3 className="text-2xl font-medium font-didot">{treatment.name}</h3>
           <div className="bg-[#2cd5c4] w-1/2 h-[2px] my-1" />
-          <p className="font-helvetica text-sm font-light pt-2">
+          <p className="font-helvetica text-sm font-light pt-2 px-6">
             {treatment.description}
           </p>
         </div>
