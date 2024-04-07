@@ -7,7 +7,7 @@ const Booking = () => {
   return (
     <div
       id="booking"
-      className="relative w-full h-full my-16 wide:border-[1.5px] border-[#e6e6e6] border-opacity-100"
+      className="relative w-full h-full my-16 wide:border-y-[1.5px] wide:max-w-[90%] border-[#e6e6e6] border-opacity-100 text-center mx-auto"
     >
       <div className="mx-auto max-w-[1280px] h-full flex-col justify-center grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Left Side - Text */}
