@@ -18,6 +18,9 @@ const config: Config = {
         helvetica: ["Helvetica Neue", "sans-serif"],
         didot: ["Didot", "serif"],
       },
+      screens: {
+        wide: { min: "1281px" },
+      },
     },
   },
   plugins: [],

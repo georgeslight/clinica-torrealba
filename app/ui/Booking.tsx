@@ -5,8 +5,11 @@ import React from "react";
 
 const Booking = () => {
   return (
-    <div id="booking" className="relative w-full h-full py-16">
-      <div className="mx-auto w-full h-full flex-col justify-center grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div
+      id="booking"
+      className="relative w-full h-full my-16 wide:border-[1.5px] border-[#e6e6e6] border-opacity-100"
+    >
+      <div className="mx-auto max-w-[1280px] h-full flex-col justify-center grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Left Side - Text */}
         <div className=" absolute z-10 md:hidden flex items-center justify-center inset-0">
           <div className="relative mx-auto px-4 text-center">
@@ -33,7 +36,8 @@ const Booking = () => {
             quality={100}
             className="w-full h-full object-fill md:max-h-96"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#ecf0f3]  w-1/2 left-1/2" />
+          <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-transparent to-[#ecf0f3]  w-1/4 left-3/4" />
+          <div className="hidden wide:block absolute inset-0 bg-gradient-to-r from-[#ecf0f3] to-transparent  w-1/4 right-3/4" />
         </div>
         {/* Right Side */}
         <div className="hidden md:relative z-10 md:flex justify-center items-center bg-[#ecf0f3]">
