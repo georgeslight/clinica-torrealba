@@ -24,56 +24,56 @@ const Footer = () => {
         {/*  Open-source library of over 400+ web ui and interactive*/}
         {/*  elements built for better web.*/}
         {/*</p>*/}
-        <ul className="flex flex-wrap justify-center items-center p-4">
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              Jobs
-            </Link>
-          </li>
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              Press
-            </Link>
-          </li>
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              Accessibility
-            </Link>
-          </li>
-          <li>
-            <Link
-              href=""
-              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
-            >
-              Partners
-            </Link>
-          </li>
-        </ul>
+        {/*<ul className="flex flex-wrap justify-center items-center p-4">*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      About*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      Blog*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      Jobs*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      Press*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      Accessibility*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li>*/}
+        {/*    <Link*/}
+        {/*      href=""*/}
+        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
+        {/*    >*/}
+        {/*      Partners*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*</ul>*/}
         <ul className="flex flex-wrap justify-center items-center p-4">
           <li>
             <a
