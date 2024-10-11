@@ -10,7 +10,7 @@ export default async function Ortodoncia({}) {
     <div className="w-full h-full pb-1">
       {/* bg-black */}
       <div className="h-full w-full mx-auto">
-        <div className="bg-[#BEC0C8] bg-opacity-75">
+        <div className="bg-gradient-to-tl from-[#8F9BAB] to-[#E0E4E7] bg-opacity-75">
           <div className="w-full max-w-[1280px] mx-auto grid md:grid-cols-2 gap-6">
             {/* left */}
             <div className="col-span-1 relative flex flex-col justify-center items-center px-8 mt-16 md:mt-0">
