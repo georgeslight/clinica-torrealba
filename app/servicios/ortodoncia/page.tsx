@@ -3,19 +3,19 @@ import Image from "next/image";
 import React from "react";
 import { ortodoncia } from "@/lib/ortodoncia";
 import TreatmentCard from "@/app/ui/services/TreatmentCard";
-import bg_ortodoncia from "@/public/ortodoncia/ortodoncia_no-bg.png";
+import bg_ortodoncia from "@/public/ortodoncia/ortodoncia.png";
 
 export default async function Ortodoncia({}) {
   return (
     <div className="w-full h-full pb-1">
       {/* bg-black */}
       <div className="h-full w-full mx-auto">
-        <div className="bg-gray-400 bg-opacity-75">
+        <div className="bg-[#BEC0C8] bg-opacity-75">
           <div className="w-full max-w-[1280px] mx-auto grid md:grid-cols-2 gap-6">
             {/* left */}
             <div className="col-span-1 relative flex flex-col justify-center items-center px-8 mt-16 md:mt-0">
               <div className="w-full text-center flex flex-col items-center">
-                <h2 className="text-center font-bold text-4xl md:text-5xl font-didot uppercase text-black tracking-widest">
+                <h2 className="text-center font-bold text-4xl lg:text-5xl font-didot uppercase text-black tracking-widest">
                   Ortodoncia
                 </h2>
                 <div className="bg-[#2cd5c4] w-2/3 h-1 my-1" />
