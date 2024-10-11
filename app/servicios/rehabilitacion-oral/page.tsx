@@ -13,7 +13,7 @@ export default async function Rehabilitacion({}) {
             {/* left */}
             <div className="w-[100vw] sm:w-full col-span-1 relative flex flex-col justify-center items-center px-8 mt-16 md:mt-0">
               <div className="w-full text-center flex flex-col items-center">
-                <h2 className="text-center font-bold text-4xl md:text-5xl font-didot uppercase text-black tracking-widest">
+                <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-didot uppercase text-black tracking-widest">
                   Rehabilitación Oral
                 </h2>
                 <div className="bg-[#2cd5c4] w-2/3 h-1 my-1" />
