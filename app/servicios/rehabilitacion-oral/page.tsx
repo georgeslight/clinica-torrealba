@@ -18,7 +18,7 @@ export default async function Rehabilitacion({}) {
                 </h2>
                 <div className="bg-[#2cd5c4] w-2/3 h-1 my-1" />
               </div>
-              <div className="font-helvetica py-10 text-center lg:text-xl xl:text-2xl">
+              <div className="font-helvetica py-10 text-center lg:text-lg xl:text-xl">
                 <p className="leading-relaxed">
                   Área de la odontologia que se encarga de restaurar de manera
                   total o parcial estructuras dentarias perdidas devolviendo

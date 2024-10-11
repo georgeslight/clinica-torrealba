@@ -13,12 +13,12 @@ export default async function Endodoncia({}) {
             {/* left */}
             <div className="col-span-1 relative flex flex-col justify-center items-center px-8 mt-16 md:mt-0">
               <div className="w-full text-center flex flex-col items-center">
-                <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-didot uppercase text-black tracking-widest">
+                <h2 className="pt-0 sm:pt-8 text-center font-bold text-3xl md:text-4xl lg:text-5xl font-didot uppercase text-black tracking-widest">
                   Endodoncia
                 </h2>
                 <div className="bg-[#2cd5c4] w-2/3 h-1 my-1" />
               </div>
-              <div className="font-helvetica py-10 text-center lg:text-xl xl:text-2xl">
+              <div className="font-helvetica py-10 text-center lg:text-lg xl:text-xl">
                 <p className="leading-relaxed">
                   El tratamiento de endodoncia o más conocido como
                   <span className="font-bold"> “tratamiento de conducto” </span>

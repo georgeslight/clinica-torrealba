@@ -18,7 +18,7 @@ export default async function ImplantalogiaPeriodoncia({}) {
                 </h2>
                 <div className="bg-[#2cd5c4] w-2/3 h-1 my-1" />
               </div>
-              <div className="font-helvetica py-10 text-center text-sm lg:text-md xl:text-lg">
+              <div className="font-helvetica py-10 text-center text-sm lg:text-lg xl:text-xl">
                 <p className="leading-relaxed">
                   La <span className="font-bold"> periodoncia </span>es la
                   especialidad que trata los tejidos que rodean el diente como
