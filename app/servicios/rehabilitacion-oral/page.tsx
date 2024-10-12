@@ -1,4 +1,3 @@
-import foto from "@/public/specialities/rehabilitacion-oral.png";
 import Image from "next/image";
 import React from "react";
 import picture from "@/public/rehabilitaion-oral/IMG_2003.png";

@@ -1,4 +1,3 @@
-import foto from "@/public/specialities/ortodoncia.png";
 import Image from "next/image";
 import React from "react";
 import { ortodoncia } from "@/lib/ortodoncia";
@@ -48,7 +47,7 @@ export default async function Ortodoncia({}) {
               <TreatmentCard key={index} treatment={treatment} />
             ))}
           </div>
-          <div className="flex-col justify-center md:w-1/2 items-center text-center object-center mx-2 md:mx-auto lg:px-2.5 ">
+          <div className="flex-col justify-center md:w-1/2 items-center text-center object-center mx-2 md:mx-auto lg:px-2.5">
             {ortodoncia.slice(2).map((treatment, index) => (
               <TreatmentCard key={index} treatment={treatment} />
             ))}

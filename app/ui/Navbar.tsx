@@ -112,7 +112,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center h-full 2xl:px-16">
-        <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-[17.5%] 2xl:w-[13%]">
+        <div className="w-5/6 sm:w-1/3 lg:w-1/5 xl:w-1/5 2xl:w-1/6">
           <Link href="/">
             <Image
               src={logo}
