@@ -21,7 +21,7 @@ import TeamCard from "@/app/ui/TeamCard";
 import { color } from "framer-motion";
 import PartnerCard from "@/app/ui/PartnerCard";
 
-SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
+SwiperCore.use([Autoplay, Pagination, Scrollbar, A11y, Mousewheel]);
 
 const PartnersSlider = () => {
   return (
@@ -32,14 +32,7 @@ const PartnersSlider = () => {
         </h2>
         <div className="w-full px-5 sm:px-20">
           <Swiper
-            modules={[
-              Autoplay,
-              Pagination,
-              Navigation,
-              Scrollbar,
-              A11y,
-              Mousewheel,
-            ]}
+            modules={[Autoplay, Pagination, Scrollbar, A11y, Mousewheel]}
             spaceBetween={20}
             slidesPerView={4}
             breakpoints={{
@@ -63,9 +56,6 @@ const PartnersSlider = () => {
               },
             }}
             // centeredSlides={true}
-            navigation={{
-              enabled: false,
-            }}
             scrollbar={{ draggable: true }}
             autoplay={{
               delay: 5000,
