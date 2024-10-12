@@ -13,67 +13,71 @@ const Footer = () => {
   return (
     <footer className="px-4 py-16 md:p-8 lg:p-10 text-center border-y-[1px] border-gray-500 mx-auto max-w-[90%]">
       <div className="mx-auto pb-16 max-w-screen-xl text-center">
-        {/*<a*/}
-        {/*  href="#"*/}
-        {/*  className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"*/}
-        {/*>*/}
-        {/*  /!* Icon goes here *!/*/}
-        {/*  <span>Flowbite</span>*/}
-        {/*</a>*/}
-        {/*<p className="my-6 text-gray-500 dark:text-gray-400">*/}
-        {/*  Open-source library of over 400+ web ui and interactive*/}
-        {/*  elements built for better web.*/}
-        {/*</p>*/}
-        {/*<ul className="flex flex-wrap justify-center items-center p-4">*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      About*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      Blog*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      Jobs*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      Press*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      Accessibility*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <Link*/}
-        {/*      href=""*/}
-        {/*      className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"*/}
-        {/*    >*/}
-        {/*      Partners*/}
-        {/*    </Link>*/}
-        {/*  </li>*/}
-        {/*</ul>*/}
+        <span className="flex justify-center items-center tracking-widest uppercase text-lg font-semibold text-gray-500">
+          Convenios
+        </span>
+        <ul className="flex flex-wrap justify-center items-center p-4 leading-relaxed">
+          <li>
+            <Link
+              href="https://portales.bancochile.cl/personas/beneficios/bienestar/salud/detalles/clinica-odontologica-torrealba"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Banco de Chile
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.isaprefundacion.cl/"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Isapre Fundación Banco Estado
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.dentalassist.cl/"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dental Assist
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Global Dent
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="http://cepapumahue.cl/1967/w3-channel.html"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CEPA Pumahue
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.huechuraba.cl/"
+              className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Municipalidad de Huechuraba
+            </Link>
+          </li>
+        </ul>
         <ul className="flex flex-wrap justify-center items-center p-4">
           <li>
             <a
