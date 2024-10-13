@@ -54,7 +54,7 @@ const Main = () => {
                 alt="Logo T"
               />
             </div>
-            <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16  text-[#ecf0f3] flex flex-col justify-center">
+            <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16 lg:pb-16 text-[#ecf0f3] flex flex-col justify-center text-center">
               <h2 className="uppercase font-light pb-[5%]">
                 <span className="font-bold text-center">Bienvenidos</span> a
                 Clinica Dental Torrealba
