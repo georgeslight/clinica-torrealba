@@ -19,7 +19,8 @@ const Skills = () => {
               <Link
                 href={`/servicios/${image.route}`}
                 key={index}
-                className="hover:underline underline-offset-2 decoration-2 decoration-[#2cd5c4] hover:scale-105 ease-in-out duration-300"
+                // decoration-[#2cd5c4]
+                className="hover:underline underline-offset-2 decoration-2 hover:scale-105 ease-in-out duration-300"
               >
                 <Image
                   src={image.src}
@@ -27,11 +28,7 @@ const Skills = () => {
                   className="rounded-t-md"
                 />
                 <div className="flex items-center justify-center py-3">
-                  <h3
-                    className={
-                      "text-center text-[#2cd5c4] font-didot font-bold text-xl"
-                    }
-                  >
+                  <h3 className={"text-center font-didot font-bold text-xl"}>
                     {image.title}
                   </h3>
                 </div>
