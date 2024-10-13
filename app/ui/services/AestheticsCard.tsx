@@ -6,6 +6,10 @@ interface Treatment {
     src: StaticImageData;
     alt: string;
   };
+  imageMobile: {
+    src: StaticImageData;
+    alt: string;
+  };
 }
 
 interface TreatmentCardProps {
@@ -20,8 +24,13 @@ const AestheticsCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
           <Image
             src={treatment.image.src}
             alt={treatment.image.alt}
-            className="object-contain"
+            className="object-contain" // hidden lg:block
           />
+          {/*<Image*/}
+          {/*  src={treatment.imageMobile.src}*/}
+          {/*  alt={treatment.image.alt}*/}
+          {/*  className="block lg:hidden object-contain"*/}
+          {/*/>*/}
         </div>
       </div>
     </div>
