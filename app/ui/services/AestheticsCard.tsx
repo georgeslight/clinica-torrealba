@@ -2,8 +2,6 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface Treatment {
-  name: string;
-  description: string;
   image: {
     src: StaticImageData;
     alt: string;
