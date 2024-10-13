@@ -5,7 +5,6 @@ import {
   A11y,
   Autoplay,
   Mousewheel,
-  Navigation,
   Pagination,
   Scrollbar,
 } from "swiper/modules";
@@ -17,9 +16,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import TeamCard from "@/app/ui/TeamCard";
-import { color } from "framer-motion";
 import PartnerCard from "@/app/ui/PartnerCard";
+import Link from "next/link";
 
 SwiperCore.use([Autoplay, Pagination, Scrollbar, A11y, Mousewheel]);
 
@@ -67,28 +65,20 @@ const PartnersSlider = () => {
           >
             {partners.map((image, index) => (
               <SwiperSlide key={index}>
-                <PartnerCard
-                  src={image.src}
-                  title={image.title}
-                  // description={image.description}
-                  alt={image.alt}
-                />
+                <Link
+                  href={image.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PartnerCard
+                    src={image.src}
+                    title={image.title}
+                    alt={image.alt}
+                  />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
-          <style>
-            {`
-            .swiper-button-next,
-            .swiper-button-prev {
-              color: #2cd5c4
-          }
-          // .swiper-button-next {
-          //   right: -40px;
-          // }
-          // .swiper-button-prev {
-          //   left: -40px
-          }`}
-          </style>
         </div>
       </div>
     </div>

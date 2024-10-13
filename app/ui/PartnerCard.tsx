@@ -15,7 +15,7 @@ const PartnerCard = ({
   return (
     <div className="relative flex items-center justify-center h-auto w-full rounded-xl group">
       <Image
-        className="rounded-md relative max-w-36 object-scale-down"
+        className="rounded-md relative max-w-36 object-scale-down py-1"
         src={src}
         alt={alt}
       />
