@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import picture from "@/public/rehabilitaion-oral/IMG_2003.png";
+import picture from "@/public/rehabilitaion-oral/IMG_1963-r.png";
 
 export default async function Rehabilitacion({}) {
   return (
@@ -10,7 +10,7 @@ export default async function Rehabilitacion({}) {
         <div className="bg-gradient-to-tl from-[#8F9BAB] to-[#E0E4E7] bg-opacity-75">
           <div className="w-full max-w-[1280px] mx-auto grid md:grid-cols-2 gap-6">
             {/* left */}
-            <div className="w-[100vw] sm:w-full col-span-1 relative flex flex-col justify-center items-center px-8 mt-16 md:mt-0">
+            <div className="pr-8 md:pr-0 pl-8 md:pl-24 w-[100vw] sm:w-full col-span-1 relative flex flex-col justify-center items-center mt-16 md:mt-0">
               <div className="w-full text-center flex flex-col items-center">
                 <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-didot uppercase text-black tracking-widest">
                   Rehabilitación Oral

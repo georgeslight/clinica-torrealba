@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import picture from "@/public/medicina-estetica/IMG_1963.png";
+import picture from "@/public/medicina-estetica/IMG_2003.png";
 import { aesthetics } from "@/lib/aesthetics";
 import AestheticsCard from "@/app/ui/services/AestheticsCard";
 
