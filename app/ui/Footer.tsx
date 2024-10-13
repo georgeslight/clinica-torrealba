@@ -8,6 +8,8 @@ import {
 import { IoIosMail } from "react-icons/io";
 import { TbMapSearch } from "react-icons/tb";
 import Link from "next/link";
+import Image from "next/image";
+import { convenios } from "@/lib/convenios";
 
 const Footer = () => {
   return (
@@ -19,37 +21,51 @@ const Footer = () => {
         <ul className="flex flex-wrap justify-center items-center p-4 leading-relaxed">
           <li>
             <Link
-              href="https://portales.bancochile.cl/personas/beneficios/bienestar/salud/detalles/clinica-odontologica-torrealba"
+              href={convenios[0].url}
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Banco de Chile
+              <div className="relative flex items-center justify-center h-auto w-full rounded-xl group">
+                <Image
+                  className="rounded-md relative max-w-36 object-scale-down py-1"
+                  src={convenios[0].src}
+                  alt={convenios[0].alt}
+                />
+              </div>
             </Link>
           </li>
           <li>
             <Link
-              href="https://www.isaprefundacion.cl/"
+              href={convenios[1].url}
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Isapre Fundación Banco Estado
+              <Image
+                className="rounded-md relative max-w-36 object-scale-down py-1"
+                src={convenios[1].src}
+                alt={convenios[1].alt}
+              />
             </Link>
           </li>
           <li>
             <Link
-              href="https://www.dentalassist.cl/"
+              href={convenios[2].url}
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Dental Assist
+              <Image
+                className="rounded-md relative max-w-36 object-scale-down py-1"
+                src={convenios[2].src}
+                alt={convenios[2].alt}
+              />
             </Link>
           </li>
           <li>
             <Link
-              href="#"
+              href=""
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,22 +75,30 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              href="http://cepapumahue.cl/1967/w3-channel.html"
+              href={convenios[4].url}
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CEPA Pumahue
+              <Image
+                className="rounded-md relative max-w-36 object-scale-down py-1"
+                src={convenios[4].src}
+                alt={convenios[4].alt}
+              />
             </Link>
           </li>
           <li>
             <Link
-              href="https://www.huechuraba.cl/"
+              href={convenios[5].url}
               className="m-4 hover:text-gray-700 md:mr-6 text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Municipalidad de Huechuraba
+              <Image
+                className="rounded-md relative max-w-36 object-scale-down py-1"
+                src={convenios[5].src}
+                alt={convenios[5].alt}
+              />
             </Link>
           </li>
         </ul>
