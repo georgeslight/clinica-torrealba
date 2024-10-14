@@ -29,8 +29,10 @@ const helvetica = local({
 });
 
 export const metadata: Metadata = {
-  title: "Clinica Dental Torrealba",
-  description: "Landing page for Clinica Torrealba",
+  title:
+    "Clínica Dental Torrealba | Estética Facial, Cirugía Oral, Ortodoncia, Rehabilitación Oral, Endodoncia, y Implantología y Periodoncia",
+  description:
+    "Clínica Dental Torrealba en Santiago ofrece cirugía oral, ortodoncia, implantología y periodoncia, endodoncia, rehabilitación oral y medicina a estética con atención especializada y personalizada.",
 };
 
 export default function RootLayout({
