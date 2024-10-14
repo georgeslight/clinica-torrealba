@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Clínica Dental Torrealba",
     short_name: "Clínica Dental Torrealba",
     description:
-      "En Clínica Dental Torrealba, ofrecemos una amplia gama de servicios especializados " +
+      "En Clínica Dental Torrealba, ubicada en Santiago Centro, ofrecemos una amplia gama de servicios dentales especializados " +
       "para cuidar tu salud bucal. Contamos con expertos en cirugía oral, endodoncia, implantología y periodoncia, " +
       "quienes utilizan las técnicas más avanzadas para garantizar tratamientos efectivos y seguros. Además, brindamos" +
       " servicios de ortodoncia para corregir maloclusiones y alinear tu sonrisa, así como rehabilitación oral para " +
