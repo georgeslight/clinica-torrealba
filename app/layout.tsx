@@ -5,6 +5,7 @@ import local from "next/font/local";
 import Navbar from "@/app/ui/Navbar";
 import Footer from "@/app/ui/Footer";
 import BookingIcon from "@/app/ui/FloatingIcons";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className={`${helvetica.variable}`}>
         <main>
           <Navbar />
+          <Analytics />
           {children}
           <BookingIcon />
         </main>
