@@ -18,7 +18,7 @@ const Footer = () => {
         <span className="flex justify-center items-center tracking-widest uppercase text-lg font-semibold text-gray-500">
           Convenios
         </span>
-        <ul className="flex flex-wrap justify-center items-center p-4 leading-relaxed">
+        <ul className="flex flex-wrap justify-center items-center p-4 leading-relaxed space-x-4 md:space-x-8">
           <li>
             <Link
               href={convenios[0].url}
