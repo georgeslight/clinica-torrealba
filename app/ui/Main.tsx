@@ -55,9 +55,13 @@ const Main = () => {
               />
             </div>
             <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 px-8 md:px-10 lg:px-16 lg:pb-16 text-[#ecf0f3] flex flex-col justify-center text-center">
+              <h1 className="hidden">
+                Clínica Dental Santiago | Dentista Santiago | Las Condes |
+                Huechuraba
+              </h1>
               <h2 className="uppercase font-light pb-[5%]">
                 <span className="font-bold text-center">Bienvenidos</span> a
-                Clinica Dental Torrealba
+                Clínica Dental Torrealba | Santiago
               </h2>
               {/*<h3 className="justify-center font-light py-[5%]">*/}
               {/*  quis eripuit ponderum singulis*/}
