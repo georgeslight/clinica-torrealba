@@ -94,6 +94,7 @@ const Main = () => {
                           height: "auto",
                         }}
                         priority={true}
+                        quality={50}
                       />
                     </motion.div>
                   ),
