@@ -6,6 +6,7 @@ import Navbar from "@/app/ui/Navbar";
 import Footer from "@/app/ui/Footer";
 import BookingIcon from "@/app/ui/FloatingIcons";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Analytics />
           {children}
           <BookingIcon />
+          <SpeedInsights />
         </main>
         <Footer />
       </body>
