@@ -1,6 +1,6 @@
+import Contact from "@/app/ui/Contact";
 import Map from "@/app/ui/location/Map";
 import React, { Suspense } from "react";
-import Contact from "@/app/ui/Contact";
 
 export default function Location() {
   return (

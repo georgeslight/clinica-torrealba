@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { imagesClinic } from "@/lib/images-clinic";
+import LogoT from "@/public/assets/torrealba-negro.jpg";
 import { AnimatePresence, motion } from "framer-motion";
-import LogoT from "@/public/assets/T-fondo_negro.jpg";
+import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
 
 const Main = () => {
   // State to hold the current image index
