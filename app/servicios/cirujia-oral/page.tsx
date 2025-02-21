@@ -1,6 +1,6 @@
+import picture from "@/public/cirujia/cirujia-oral.png";
 import Image from "next/image";
 import React from "react";
-import picture from "@/public/cirujia/IMG_2156.png";
 
 export default async function Cirujia({}) {
   return (

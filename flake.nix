@@ -21,7 +21,6 @@
 
       shellHook = ''
         echo "node `$pkgs.nodejs}/bin/node --version`"
-        yarn add next@latest
         yarn install
         yarn dev &
         exec zsh
