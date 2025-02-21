@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import logo from "@/public/assets/torrealba.png";
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import clsx from "clsx";
-import { usePathname } from "next/navigation";
-import logo from "@/public/assets/TORRE-ALBA.png";
 
 const Navbar = () => {
   const pathname = usePathname();
