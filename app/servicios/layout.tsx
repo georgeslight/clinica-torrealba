@@ -1,7 +1,7 @@
-import React from "react";
 import Booking from "@/app/ui/Booking";
 import Contact from "@/app/ui/Contact";
 import Partners from "@/app/ui/PartnersSlider";
+import React from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
