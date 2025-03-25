@@ -19,7 +19,7 @@ import "swiper/css/effect-coverflow";
 import PartnerCard from "@/app/ui/PartnerCard";
 import Link from "next/link";
 
-SwiperCore.use([Autoplay, Pagination, Scrollbar, A11y, Mousewheel]);
+// SwiperCore.use([Autoplay, Pagination, Scrollbar, A11y, Mousewheel]);
 
 const PartnersSlider = () => {
   return (

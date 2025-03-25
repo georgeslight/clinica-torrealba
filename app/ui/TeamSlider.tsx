@@ -20,7 +20,7 @@ import "swiper/css/effect-coverflow";
 import TeamCard from "@/app/ui/TeamCard";
 import { color } from "framer-motion";
 
-SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
+// SwiperCore.use([Autoplay, Pagination, Navigation, Scrollbar, A11y, Mousewheel]);
 
 const TeamSlider = () => {
   return (
