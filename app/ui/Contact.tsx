@@ -54,7 +54,7 @@ const Contact = () => {
               {/*  className="hover:underline"*/}
               {/*>*/}
               <p>
-                Avenida la Dehesa 1201,
+                Av. la Dehesa 1201,
                 Oficina 227,
                 Torre Oriente,
                 Región Metropolitana
