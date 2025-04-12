@@ -39,8 +39,7 @@ const Contact = () => {
               {/*  className="hover:underline"*/}
               {/*>*/}
               <p>
-                Av. Pedro Fontova 6651, Local 33, Huechuraba, Región
-                Metropolitana
+                Av. Pedro Fontova 6651, Local 33, Huechuraba, Región Metropolitana
               </p>
               {/*</a>*/}
             </div>
@@ -54,7 +53,12 @@ const Contact = () => {
               {/*  rel="noopener noreferrer"*/}
               {/*  className="hover:underline"*/}
               {/*>*/}
-              <p>Estoril 120, Oficina 204, Las Condes, Región Metropolitana</p>
+              <p>
+                Avenida la Dehesa 1201,
+                Oficina 227,
+                Torre Oriente,
+                Región Metropolitana
+              </p> 
               {/*</a>*/}
             </div>
             <Link

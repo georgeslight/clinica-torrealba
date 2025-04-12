@@ -19,14 +19,14 @@ const Map = () => {
         lng: -70.67016101323479,
       };
 
-      const positionLasCondes: { lat: number; lng: number } = {
-        lat: -33.383835699156464,
-        lng: -70.53350293489933,
+      const positionLaDehesa: { lat: number; lng: number } = {
+        lat: -33.36040218278683,
+        lng: -70.51559054294788,
       };
 
       const center: { lat: number; lng: number } = {
-        lat: (positionHuechuraba.lat + positionLasCondes.lat) / 2,
-        lng: (positionHuechuraba.lng + positionLasCondes.lng) / 2,
+        lat: (positionHuechuraba.lat + positionLaDehesa.lat) / 2,
+        lng: (positionHuechuraba.lng + positionLaDehesa.lng) / 2,
       };
 
       //   map options
@@ -48,9 +48,9 @@ const Map = () => {
           fontWeight: "bold",
         },
       });
-      const markerLasCondes = new google.maps.Marker({
+      const markerLaDehesa = new google.maps.Marker({
         map: map,
-        position: positionLasCondes,
+        position: positionLaDehesa,
         label: {
           text: "T",
           fontWeight: "bold",
@@ -62,9 +62,9 @@ const Map = () => {
           "https://www.google.com/maps/dir//Clinica+Torrealba+-+Av.+Pedro+Fontova+6651,+8600578+Huechuraba,+Regi%C3%B3n+Metropolitana,+Chile/@-33.3620955,-70.6727549,17z/data=!4m17!1m7!3m6!1s0x9662c7646f0e3fc5:0xb4de474ee30c38ba!2sClinica+Torrealba!8m2!3d-33.3621!4d-70.67018!16s%2Fg%2F11trmmkz09!4m8!1m0!1m5!1m1!1s0x9662c7646f0e3fc5:0xb4de474ee30c38ba!2m2!1d-70.67018!2d-33.3621!3e1?entry=ttu",
         );
       });
-      markerLasCondes.addListener("click", () => {
+      markerLaDehesa.addListener("click", () => {
         window.open(
-          "https://www.google.com/maps/dir//DDS+Odontolog%C3%ADa+by+Doctor+Torrealba+-+Estoril+50,+7591047+Las+Condes,+Regi%C3%B3n+Metropolitana,+Chile/@-33.3840373,-70.5360671,17z/data=!4m17!1m7!3m6!1s0x9662cf6b96daa1bb:0x25f868702a9b250!2sDDS+Odontolog%C3%ADa+by+Doctor+Torrealba!8m2!3d-33.3840418!4d-70.5334922!16s%2Fg%2F11vm60_zms!4m8!1m0!1m5!1m1!1s0x9662cf6b96daa1bb:0x25f868702a9b250!2m2!1d-70.5334922!2d-33.3840418!3e1?entry=ttu",
+          "https://www.google.com/maps/dir//-33.360447,-70.515612/@-33.360447,-70.5168284,19z/data=!4m8!1m5!3m4!2zMzPCsDIxJzM3LjYiUyA3MMKwMzAnNTYuMiJX!8m2!3d-33.360447!4d-70.515612!4m1!3e3?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D",
         );
       });
     };
