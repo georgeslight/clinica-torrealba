@@ -1,18 +1,19 @@
 "use client";
 import React, { useEffect } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
+import { setOptions } from "@googlemaps/js-api-loader";
 
 const Map = () => {
   const mapRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const initMap = async () => {
-      const loader = new Loader({
-        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-        version: "weekly",
+      setOptions({
+        key: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+        v: "weekly",
       });
 
-      const { Map } = await loader.importLibrary("maps");
+      const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
 
       const positionHuechuraba: { lat: number; lng: number } = {
         lat: -33.36209088909539,
@@ -40,21 +41,15 @@ const Map = () => {
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
       //   put marker on map
-      const markerHuechuraba = new google.maps.Marker({
+      const markerHuechuraba = new AdvancedMarkerElement({
         map: map,
         position: positionHuechuraba,
-        label: {
-          text: "T",
-          fontWeight: "bold",
-        },
+        title: "T",
       });
-      const markerLaDehesa = new google.maps.Marker({
+      const markerLaDehesa = new AdvancedMarkerElement({
         map: map,
         position: positionLaDehesa,
-        label: {
-          text: "T",
-          fontWeight: "bold",
-        },
+        title: "T"
       });
 
       markerHuechuraba.addListener("click", () => {
