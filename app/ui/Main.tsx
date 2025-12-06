@@ -91,18 +91,14 @@ const Main = () => {
                       exit={{ opacity: 0.05, x: -15 }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       className={"h-full w-full items-center flex"}
+                      style={{ position: 'relative' }}
                     >
                       <Image
                         className="object-cover z-1 rounded-sm"
                         src={image.src}
                         alt={image.alt}
                         onClick={nextImage}
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                        }}
                         priority={true}
-                        quality={25}
                       />
                     </motion.div>
                   ),

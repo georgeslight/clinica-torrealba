@@ -18,7 +18,7 @@ const PartnerCard = ({
         className="rounded-md relative max-w-36 object-scale-down py-1"
         src={src}
         alt={alt}
-        quality={10}
+        quality={50}
       />
     </div>
   );
