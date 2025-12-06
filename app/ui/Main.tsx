@@ -11,13 +11,13 @@ const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Ref to store the interval ID
-  const intervalRef = useRef<NodeJS.Timeout | number>(null);
+  const intervalRef = useRef<number | null>(null);
 
   const startInterval = () => {
     // clear existing interval if any
     if (intervalRef.current) clearInterval(intervalRef.current);
 
-    intervalRef.current = setInterval(() => {
+    intervalRef.current = window.setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === imagesClinic.length - 1 ? 0 : prevIndex + 1,
       );
