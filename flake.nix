@@ -3,7 +3,7 @@
 
   inputs = {
     # nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
   };
 
   outputs = { self, nixpkgs,... }: let
@@ -13,9 +13,9 @@
       pkgs = import nixpkgs { inherit system; };
     in pkgs.mkShell {
       packages = with pkgs; [
-        nodejs_23
+        nodejs_24
         nodePackages.pnpm
-        (yarn.override { nodejs = nodejs_23; })
+        (yarn.override { nodejs = nodejs_24; })
         zsh
       ];
 

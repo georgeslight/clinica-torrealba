@@ -11,13 +11,13 @@ const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Ref to store the interval ID
-  const intervalRef = useRef<NodeJS.Timeout | number>();
+  const intervalRef = useRef<number | null>(null);
 
   const startInterval = () => {
     // clear existing interval if any
     if (intervalRef.current) clearInterval(intervalRef.current);
 
-    intervalRef.current = setInterval(() => {
+    intervalRef.current = window.setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === imagesClinic.length - 1 ? 0 : prevIndex + 1,
       );
@@ -28,7 +28,11 @@ const Main = () => {
   useEffect(() => {
     startInterval();
     // Clear interval on component unmount
-    return () => clearInterval(intervalRef.current);
+    return () => {
+      if (intervalRef.current !== null) {
+        clearInterval(intervalRef.current);
+      }
+    };
   }, []);
 
   const nextImage = () => {
@@ -87,18 +91,14 @@ const Main = () => {
                       exit={{ opacity: 0.05, x: -15 }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       className={"h-full w-full items-center flex"}
+                      style={{ position: 'relative' }}
                     >
                       <Image
                         className="object-cover z-1 rounded-sm"
                         src={image.src}
                         alt={image.alt}
                         onClick={nextImage}
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                        }}
                         priority={true}
-                        quality={25}
                       />
                     </motion.div>
                   ),

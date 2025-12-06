@@ -31,7 +31,7 @@ const Footer = () => {
                   className="rounded-md relative max-w-36 object-scale-down py-1"
                   src={convenios[0].src}
                   alt={convenios[0].alt}
-                  quality={10}
+                  quality={50}
                 />
               </div>
             </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                 className="rounded-md relative max-w-36 object-scale-down py-1"
                 src={convenios[1].src}
                 alt={convenios[1].alt}
-                quality={10}
+                quality={50}
               />
             </Link>
           </li>
@@ -62,7 +62,7 @@ const Footer = () => {
                 className="rounded-md relative max-w-36 object-scale-down py-1"
                 src={convenios[2].src}
                 alt={convenios[2].alt}
-                quality={10}
+                quality={50}
               />
             </Link>
           </li>
@@ -87,7 +87,7 @@ const Footer = () => {
                 className="rounded-md relative max-w-36 object-scale-down py-1"
                 src={convenios[4].src}
                 alt={convenios[4].alt}
-                quality={10}
+                quality={50}
               />
             </Link>
           </li>
@@ -102,7 +102,7 @@ const Footer = () => {
                 className="rounded-md relative max-w-36 object-scale-down py-1"
                 src={convenios[5].src}
                 alt={convenios[5].alt}
-                quality={10}
+                quality={50}
               />
             </Link>
           </li>

@@ -1,4 +1,3 @@
-import foto from "@/public/specialities/endodoncia.png";
 import Image from "next/image";
 import React from "react";
 import picture from "@/public/endodoncia/IMG_2071.png";
@@ -34,8 +33,9 @@ export default async function Endodoncia({}) {
               <Image
                 className="object-cover z-1 rounded-sm h-full"
                 src={picture}
-                alt="Foto Ortodoncia"
+                alt="Foto Endoconcia"
                 priority={true}
+                quality={50}
               />
             </div>
           </div>
