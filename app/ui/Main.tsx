@@ -11,7 +11,7 @@ const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Ref to store the interval ID
-  const intervalRef = useRef<NodeJS.Timeout | number>();
+  const intervalRef = useRef<NodeJS.Timeout | number>(null);
 
   const startInterval = () => {
     // clear existing interval if any
@@ -28,7 +28,11 @@ const Main = () => {
   useEffect(() => {
     startInterval();
     // Clear interval on component unmount
-    return () => clearInterval(intervalRef.current);
+    return () => {
+      if (intervalRef.current !== null) {
+        clearInterval(intervalRef.current);
+      }
+    };
   }, []);
 
   const nextImage = () => {
