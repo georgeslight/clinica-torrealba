@@ -52,10 +52,6 @@
         default = pkgsFor.${system}.mkShell {
           packages = with pkgsFor.${system}; [
             bun
-
-            # Add the bun2nix binary to our devshell
-            # Optional now that we have a binary on npm
-            bun2nix
             zsh
           ];
 
