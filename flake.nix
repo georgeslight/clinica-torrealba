@@ -1,30 +1,65 @@
 {
-  description = "Clinica Torrealba Flake";
+  description = "Bun2Nix react sample";
 
   inputs = {
-    # nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    systems.url = "github:nix-systems/default";
+
+    bun2nix.url = "github:nix-community/bun2nix?tag=2.0.5";
+    bun2nix.inputs.nixpkgs.follows = "nixpkgs";
+    bun2nix.inputs.systems.follows = "systems";
   };
 
-  outputs = { self, nixpkgs,... }: let
-    system = "x86_64-linux";
-  in {
-    devShells.${system}.default = let
-      pkgs = import nixpkgs { inherit system; };
-    in pkgs.mkShell {
-      packages = with pkgs; [
-        nodejs_24
-        nodePackages.pnpm
-        (yarn.override { nodejs = nodejs_24; })
-        zsh
-      ];
+  # Use the cached version of bun2nix from the nix-community cli
+  nixConfig = {
+    extra-substituters = [
+      "https://cache.nixos.org"
+      "https://nix-community.cachix.org"
+    ];
+    extra-trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+    ];
+  };
 
-      shellHook = ''
-        echo "node `$pkgs.nodejs}/bin/node --version`"
-        yarn install
-        yarn dev &
-        exec zsh
-      '';
+  outputs =
+    inputs:
+    let
+      # Read each system from the nix-systems input
+      eachSystem = inputs.nixpkgs.lib.genAttrs (import inputs.systems);
+
+      # Access the package set for a given system
+      pkgsFor = eachSystem (
+        system:
+        import inputs.nixpkgs {
+          inherit system;
+          # Use the bun2nix overlay, which puts `bun2nix` in pkgs
+          # You can, of course, still access
+          # inputs.bun2nix.packages.${system}.default instead
+          # and use that to build your package instead
+          overlays = [ inputs.bun2nix.overlays.default ];
+        }
+      );
+    in
+    {
+      packages = eachSystem (system: {
+        # Produce a package for this template with bun2nix in
+        # the overlay
+        default = pkgsFor.${system}.callPackage ./default.nix { };
+      });
+
+      devShells = eachSystem (system: {
+        default = pkgsFor.${system}.mkShell {
+          packages = with pkgsFor.${system}; [
+            bun
+            zsh
+          ];
+
+          shellHook = ''
+            bun install --frozen-lockfile
+            exec zsh
+          '';
+        };
+      });
     };
-  };
 }
