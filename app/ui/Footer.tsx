@@ -12,6 +12,9 @@ import Image from "next/image";
 import { convenios } from "@/lib/convenios";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="px-4 py-16 md:p-8 lg:p-10 text-center border-y-[1px] border-gray-500 mx-auto max-w-[90%]">
       <div className="mx-auto pb-16 max-w-screen-xl text-center">
@@ -160,7 +163,7 @@ const Footer = () => {
           </li>
         </ul>
         <span className="text-sm text-gray-500 sm:text-center p-4">
-          © 2024 Clinica Dental Torrealba. Todos los derechos reservados.
+          © { currentYear } Clinica Dental Torrealba. Todos los derechos reservados.
         </span>
       </div>
     </footer>
