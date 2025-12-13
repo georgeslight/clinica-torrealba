@@ -1,13 +1,13 @@
 default:
-  image: node:20-slim
+  image: oven/bun:latest
 
 stages:
   - deploy
 
 before_script:
-  - apt-get update -qq && apt-get install -y curl unzip
-  - curl -fsSL https://bun.sh/install | bash
-  - export PATH="$HOME/.bun/bin:$PATH"
+  # - apt-get update -qq && apt-get install -y curl unzip
+  # - curl -fsSL https://bun.sh/install | bash
+  # - export PATH="$HOME/.bun/bin:$PATH"
   - bun i -g vercel
 
 deploy_preview:
