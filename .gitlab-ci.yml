@@ -1,14 +1,10 @@
 default:
-  image: node:20-slim
+  image: oven/bun:latest
 
 stages:
   - deploy
 
 before_script:
-  # Install bun
-  - curl -fsSL https://bun.sh/install | bash
-  - export PATH="$HOME/.bun/bin:$PATH"
-  # Install Vercel CLI
   - bun i -g vercel
 
 deploy_preview:
@@ -19,6 +15,7 @@ deploy_preview:
     TOKEN: $VERCEL_TOKEN
   script:
     - vercel pull --yes --environment=preview --token="$TOKEN"
+    - bun install --frozen-lockfile
     - vercel build --token="$TOKEN"
     - vercel deploy --prebuilt --token="$TOKEN"
 
@@ -30,5 +27,6 @@ deploy_production:
     TOKEN: $VERCEL_TOKEN
   script:
     - vercel pull --yes --environment=production --token="$TOKEN"
+    - bun install --frozen-lockfile --production
     - vercel build --prod --token="$TOKEN"
     - vercel deploy --prebuilt --prod --token="$TOKEN"
