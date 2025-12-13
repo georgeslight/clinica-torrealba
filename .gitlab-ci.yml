@@ -1,28 +1,34 @@
+default:
+  image: node:20-slim
+
 stages:
-  - build
   - deploy
 
-.standard-rules:
-  rules:
-    - if: $CI_COMMIT_BRANCH == "prod"
+before_script:
+  # Install bun
+  - curl -fsSL https://bun.sh/install | bash
+  - export PATH="$HOME/.bun/bin:$PATH"
+  # Install Vercel CLI
+  - bun i -g vercel
 
-build:
-  stage: build
-  image: oven/bun:latest
-  script:
-    - bun install --frozen-lockfile
-    - bun run build
-  artifacts:
-    paths:
-      - .next/
-      - public/
-      - package.json
-    expire_in: 1 hour  
-
-deploy:
+deploy_preview:
   stage: deploy
-  image: oven/bun:latest
+  except:
+    - prod
+  variables:
+    TOKEN: $VERCEL_TOKEN
   script:
-    - bunx vercel deploy --prod --token=$VERCEL_TOKEN --yes 
-  dependencies:
-    - build
+    - vercel pull --yes --environment=preview --token="$TOKEN"
+    - vercel build --token="$TOKEN"
+    - vercel deploy --prebuilt --token="$TOKEN"
+
+deploy_production:
+  stage: deploy
+  only:
+    - prod
+  variables:
+    TOKEN: $VERCEL_TOKEN
+  script:
+    - vercel pull --yes --environment=production --token="$TOKEN"
+    - vercel build --prod --token="$TOKEN"
+    - vercel deploy --prebuilt --prod --token="$TOKEN"

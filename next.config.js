@@ -1,6 +1,7 @@
-module.exports = {
+const nextConfig = {
   images: {
-    // Add all qualities used in your components
     qualities: [50, 75, 100],
   },
 };
+
+module.exports = nextConfig;
