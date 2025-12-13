@@ -5,9 +5,6 @@ stages:
   - deploy
 
 before_script:
-  # - apt-get update -qq && apt-get install -y curl unzip
-  # - curl -fsSL https://bun.sh/install | bash
-  # - export PATH="$HOME/.bun/bin:$PATH"
   - bun i -g vercel
 
 deploy_preview:
@@ -18,7 +15,7 @@ deploy_preview:
     TOKEN: $VERCEL_TOKEN
   script:
     - vercel pull --yes --environment=preview --token="$TOKEN"
-    - bun install
+    - bun install --frozen-lockfile
     - vercel build --token="$TOKEN"
     - vercel deploy --prebuilt --token="$TOKEN"
 
@@ -30,6 +27,6 @@ deploy_production:
     TOKEN: $VERCEL_TOKEN
   script:
     - vercel pull --yes --environment=production --token="$TOKEN"
-    - bun install --production
+    - bun install --frozen-lockfile --production
     - vercel build --prod --token="$TOKEN"
     - vercel deploy --prebuilt --prod --token="$TOKEN"
