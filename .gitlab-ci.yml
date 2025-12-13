@@ -2,27 +2,30 @@ stages:
   - build
   - deploy
 
-.standard-rules:
-  rules:
-    - if: $CI_COMMIT_BRANCH == "prod"
-
 build:
   stage: build
   image: oven/bun:latest
   script:
     - bun install --frozen-lockfile
-    - bun run build
+    - bun add vercel
+    - bunx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - bunx vercel build --prod --token=$VERCEL_TOKEN
   artifacts:
     paths:
       - .next/
       - public/
-      - package.json
+      - .vercel/
     expire_in: 1 hour  
+  rules:
+    - if: $CI_COMMIT_BRANCH == "prod"
 
 deploy:
   stage: deploy
   image: oven/bun:latest
-  script:
-    - bunx vercel deploy --prod --token=$VERCEL_TOKEN --yes 
   dependencies:
     - build
+  script:
+    - bun add --global vercel
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN --yes 
+  rules:
+    - if: $CI_COMMIT_BRANCH == "prod"
