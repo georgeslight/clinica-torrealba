@@ -7,10 +7,12 @@ deploy_staging:
   only:
     - main
   script:
+    - bun install --frozen-lock
     - bun add --global vercel
     - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
-    - vercel build --token=$VERCEL_TOKEN
-    - vercel deploy --prebuilt --token=$VERCEL_TOKEN
+    # - vercel build --token=$VERCEL_TOKEN
+    - bun run build
+    - vercel deploy --prebuilt --token=$VERCEL_TOKEN --yes
     
 deploy_prod:
   stage: deploy
@@ -18,7 +20,9 @@ deploy_prod:
   only:
     - prod
   script:
+    - bun install --frozen-lock
     - bun add --global vercel
     - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
-    - vercel build --prod --token=$VERCEL_TOKEN
-    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+    # - vercel build --prod --token=$VERCEL_TOKEN
+    - bun run build
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN --yes
