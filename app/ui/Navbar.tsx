@@ -170,6 +170,19 @@ const Navbar = () => {
                 Contacto
               </li>
             </Link>
+            <Link href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
+              target="_blank"
+              rel="noopener noreferrer" className="font-didot">
+              <li
+                onClick={() => setSelected("/#book")}
+                className={clsx(
+                  "mx-5 2xl:mx-10 lg:text-md 2xl:text-lg uppercase cursor-pointer hover:text-[#2cd5c4] hover:scale-105 ease-in-out duration-150",
+                  { "text-[#2cd5c4] font-bold": selected === "/#book" },
+                )}
+              >
+                Agenda Tu Hora
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
@@ -327,6 +340,21 @@ const Navbar = () => {
                     })}
                   >
                     Contacto
+                  </li>
+                </Link>
+                <Link href="https://4c2c5c15e0c38ccb091c5ef98afcb3afac9dce65.agenda.softwaredentalink.com/agenda"
+                  target="_blank"
+                  rel="noopener noreferrer" className="font-didot">
+                  <li
+                    onClick={() => {
+                      setSide(false);
+                      setSelected("/#book");
+                    }}
+                    className={clsx("py-4 text-sm", {
+                      "text-[#2cd5c4] font-bold": selected === "/#book",
+                    })}
+                  >
+                    Agenda Tu Hora
                   </li>
                 </Link>
               </ul>
